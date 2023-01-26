@@ -6,7 +6,10 @@ int main() {
     int n;
     std::cout << "Enter a number: ";
     std::cin >> n;
-    std::cout << sum(n) << std::endl;
+    if ( n >= 1) {
+        std::cout << sum(n) << std::endl;
+    }
+    else {std::cout << "El valor no es valido" << std::endl;}
     return 0;
 }
 
