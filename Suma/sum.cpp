@@ -1,12 +1,19 @@
 #include <iostream>
 
+int sum(int valor);
+
 int main() {
-    int n, suma = 0;
+    int n;
     std::cout << "Enter a number: ";
     std::cin >> n;
-    for (int i = 0; i <= n; i++) {
+    std::cout << sum(n) << std::endl;
+    return 0;
+}
+
+int sum(int valor) {
+    int suma = 0;
+    for (int i = 0; i <= valor; i++) {
         suma += i;
     }
-    std::cout << suma << std::endl;
-    return 0;
+    return suma;
 }
