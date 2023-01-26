@@ -3,13 +3,12 @@
 int sum(int valor);
 
 int main() {
-    int n;
-    std::cout << "Enter a number: ";
-    std::cin >> n;
-    if ( n >= 1) {
-        std::cout << sum(n) << std::endl;
+    int n = 0;
+    while ( n < 1) {
+        std::cout << "Enter a number: ";
+        std::cin >> n;
     }
-    else {std::cout << "El valor no es valido" << std::endl;}
+    std::cout << sum(n) << std::endl;
     return 0;
 }
 
