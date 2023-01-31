@@ -36,13 +36,22 @@ int main() {
 
     // Calculo de varianza
     for (int i = 0; i < n_datos; i++) {
-        varianza = std::pow(vector[i], 2);
+        varianza += std::pow(vector[i] - media, 2);
     }
-    varianza = varianza/2 - std::pow(media, 2);
+    varianza = varianza/n_datos;
 
     // Calculo de desviación tipica
     desviacion_tipica = std::pow(varianza, 0.5);
 
+    // Calculo de cuasivarianza
+    cuasivarianza = varianza * n_datos / (n_datos -1);
+
+    // Calculo de cuasidesvacion tipica
+    cuasidesviacion_tipica = std::pow(cuasivarianza, 0.5);
+
+    // Calculo de cv
+    cv = desviacion_tipica / std::abs(media);
+    
     std::cout << "Media: " << media << std::endl;
     std::cout << "Mediana: " << mediana << std::endl;
     std::cout << "Recorrido: " << recorrido << std::endl;
