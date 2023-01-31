@@ -6,7 +6,7 @@ int main() {
         std::cout << "Introduce el primer valor (a): ";
         std::cin >> a;
     }
-    while (b < 1) {
+    while (b < a) {
         std::cout << "Introduce el segundo valor (b): ";
         std::cin >> b;
     }
