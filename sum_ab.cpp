@@ -5,9 +5,11 @@ int main() {
         std::cout << "Introduzca el primer valor (a): ";
         std::cin >> a;
     }
+    while (b < 1) {
         std::cout << "Introduzca el segundo valor (b): ";
         std::cin >> b;
-    
+    }
+
     for (int i = a; i <= b; i++) {
         suma += i;
     }
