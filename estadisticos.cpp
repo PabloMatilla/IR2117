@@ -1,13 +1,20 @@
 #include <iostream>
-#include <string>
+#include <vector>
 
 int main() {
     std::cout << "El programa realiza los principales estadísticos de una muestra" << std::endl;
     int n_datos;
+    std::vector<double> vector;
     double media, mediana, recorrido, recorrido_intercuartilico, varianza;
     double desviacion_tipica, cuasivarianza, cuasidesviacion_tipica, cv;
     std::cout << "Introduzca la cantidad de datos de la muestra: ";
     std::cin >> n_datos;
+    for (int i = 0; i < n_datos; i++) {
+        double dato;
+        std::cout << "Introduzca el dato (" << i +1 << "): ";
+        std::cin >> dato;
+        vector.push_back(dato);
+    }
 
     std::cout << "Media: " << media << std::endl;
     std::cout << "Mediana: " << mediana << std::endl;
