@@ -15,6 +15,12 @@ int main() {
         std::cin >> dato;
         vector.push_back(dato);
     }
+    // Calculo de la media
+    for (int i = 0; i < n_datos; i++) {
+        media += vector[i];
+    }
+    media = media/n_datos;
+
 
     std::cout << "Media: " << media << std::endl;
     std::cout << "Mediana: " << mediana << std::endl;
