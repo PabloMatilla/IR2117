@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 int main() {
     std::cout << "El programa realiza los principales estadísticos de una muestra" << std::endl;
@@ -21,6 +22,13 @@ int main() {
     }
     media = media/n_datos;
 
+    // Calculo de la mediana
+    std::sort(vector.begin(), vector.end());
+    if (n_datos % 2 == 0) {
+        mediana = (vector[n_datos/2 -1] + vector[n_datos/2])/2;
+    } else {
+        mediana = vector[(n_datos)/2];
+    }
 
     std::cout << "Media: " << media << std::endl;
     std::cout << "Mediana: " << mediana << std::endl;
