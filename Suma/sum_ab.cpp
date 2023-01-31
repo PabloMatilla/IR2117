@@ -1,11 +1,13 @@
 #include <iostream>
 
 int main() {
-    int a, b, suma = 0;
-    std::cout << "Introduce el primer valor (a): ";
-    std::cin >> a;
-    std::cout << "Introduce el segundo valor (b): ";
-    std::cin >> b;
+    int a = 0, b = 0, suma = 0;
+    while (a < 1) {
+        std::cout << "Introduce el primer valor (a): ";
+        std::cin >> a;
+    }
+        std::cout << "Introduce el segundo valor (b): ";
+        std::cin >> b;
 
     for (int i = a; i <= b; i++) {
         suma += i;
