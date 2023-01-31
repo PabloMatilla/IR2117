@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 
 int main() {
     std::cout << "El programa realiza los principales estadísticos de una muestra" << std::endl;
@@ -30,10 +31,18 @@ int main() {
         mediana = vector[(n_datos)/2];
     }
 
+    // Calculo de recorrido
+    recorrido = vector[n_datos -1] - vector[0];
+
     // Calculo de varianza
     for (int i = 0; i < n_datos; i++) {
-        varianza = vector[i]^2;
+        varianza = std::pow(vector[i], 2);
     }
+    varianza = varianza/2 - std::pow(media, 2);
+
+    // Calculo de desviación tipica
+    desviacion_tipica = std::pow(varianza, 0.5);
+
     std::cout << "Media: " << media << std::endl;
     std::cout << "Mediana: " << mediana << std::endl;
     std::cout << "Recorrido: " << recorrido << std::endl;
