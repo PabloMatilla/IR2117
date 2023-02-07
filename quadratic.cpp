@@ -23,9 +23,9 @@ int main() {
         sol1 = -b / (2*a);
         std::cout << "La solucion es x1 = " << sol1 << std::endl;
     }
-    sol1 = 0;
+    //sol1 = 0;
 
-    std::cout << "La solucion es x = " << sol1 << std::endl;
+    //std::cout << "La solucion es x = " << sol1 << std::endl;
     return 0;
 
 }
