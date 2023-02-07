@@ -1,8 +1,9 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
     std::cout << "Programa para buscar la solucion de una ecuacion cuadrada ax^2 + bx + c = 0" << std::endl;
-    double a, b, c, sol;
+    double a, b, c, disc, sol1, sol2;
     std::cout << "Introduce el valor de a: ";
     std::cin >> a;
     std::cout << "Introduce el valor de b: ";
@@ -10,9 +11,16 @@ int main() {
     std::cout << "Introduce el valor de c: ";
     std::cin >> c;
 
-    sol = 0;
+    disc = pow(b, 2) - 4 * a * c;
 
-    std::cout << "La solucion es x = " << sol << std::endl;
+    if (disc > 0) {
+        sol1 = -b + (pow(disc, 1/2)) / (2*a);
+        std::cout << "La solucion es x1 = " << sol1 << std::endl;
+        std::cout << "La solucion es x2 = " << sol2 << std::endl;
+    }
+    sol1 = 0;
 
+    std::cout << "La solucion es x = " << sol1 << std::endl;
+    return 0;
 
 }
