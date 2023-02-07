@@ -24,6 +24,13 @@ int main() {
         sol1 = -b / (2*a);
         std::cout << "La solucion es x1 = " << sol1 << std::endl;
     }
+    else{
+        std::complex<double> raiz_disc = sqrt(std::complex<double>(disc));
+        std::complex<double> sol1 = -b + raiz_disc / (2*a);
+        std::complex<double> sol2 = -b - raiz_disc / (2*a);
+        std::cout << "La solucion es x1 = " << sol1 << std::endl;
+        std::cout << "La solucion es x2 = " << sol2 << std::endl;
+    }
     return 0;
 
 }
