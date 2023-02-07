@@ -15,8 +15,13 @@ int main() {
 
     if (disc > 0) {
         sol1 = -b + (pow(disc, 1/2)) / (2*a);
+        sol2 = -b - (pow(disc, 1/2)) / (2*a);
         std::cout << "La solucion es x1 = " << sol1 << std::endl;
         std::cout << "La solucion es x2 = " << sol2 << std::endl;
+    }
+    else if (disc == 0){
+        sol1 = -b / (2*a);
+        std::cout << "La solucion es x1 = " << sol1 << std::endl;
     }
     sol1 = 0;
 
