@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <complex>
 
 int main() {
     std::cout << "Programa para buscar la solucion de una ecuacion cuadrada ax^2 + bx + c = 0" << std::endl;
@@ -23,9 +24,6 @@ int main() {
         sol1 = -b / (2*a);
         std::cout << "La solucion es x1 = " << sol1 << std::endl;
     }
-    //sol1 = 0;
-
-    //std::cout << "La solucion es x = " << sol1 << std::endl;
     return 0;
 
 }
