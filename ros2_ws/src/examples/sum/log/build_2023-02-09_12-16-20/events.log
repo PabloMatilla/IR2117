@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.001164] (examples_sum) JobQueued: {'identifier': 'examples_sum', 'dependencies': OrderedDict()}
+[0.001232] (examples_sum) JobStarted: {'identifier': 'examples_sum'}
+[0.017227] (examples_sum) JobProgress: {'identifier': 'examples_sum', 'progress': 'cmake'}
+[0.018565] (examples_sum) JobProgress: {'identifier': 'examples_sum', 'progress': 'build'}
+[0.019316] (examples_sum) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum', '--', '-j6', '-l6'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'usuario'), ('SSH_AGENT_PID', '2499'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'ibus'), ('HOME', '/home/usuario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2316'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=65cee8b7a97adfde2f3fd07d63e4ccd0'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'usuario'), ('JOURNAL_STREAM', '8:57860'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'usuario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/usuario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrob09.act.uji.es:@/tmp/.ICE-unix/2591,unix/labrob09.act.uji.es:/tmp/.ICE-unix/2591'), ('INVOCATION_ID', 'c0e117bb92084d1387f88f94815623ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6eb023c_550a_4889_87f9_9ea8efadfdf2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum'), ('LC_ALL', 'es_ES.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=65cee8b7a97adfde2f3fd07d63e4ccd0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum:/opt/ros/foxy')]), 'shell': False}
+[0.065732] (examples_sum) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sum\x1b[0m\n'}
+[0.098698] (-) TimerEvent: {}
+[0.099195] (examples_sum) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o\x1b[0m\n'}
+[0.198801] (-) TimerEvent: {}
+[0.299097] (-) TimerEvent: {}
+[0.399392] (-) TimerEvent: {}
+[0.499696] (-) TimerEvent: {}
+[0.600000] (-) TimerEvent: {}
+[0.700280] (-) TimerEvent: {}
+[0.800568] (-) TimerEvent: {}
+[0.900874] (-) TimerEvent: {}
+[1.001169] (-) TimerEvent: {}
+[1.101475] (-) TimerEvent: {}
+[1.201789] (-) TimerEvent: {}
+[1.302102] (-) TimerEvent: {}
+[1.402403] (-) TimerEvent: {}
+[1.502697] (-) TimerEvent: {}
+[1.603001] (-) TimerEvent: {}
+[1.703299] (-) TimerEvent: {}
+[1.803597] (-) TimerEvent: {}
+[1.903899] (-) TimerEvent: {}
+[2.004209] (-) TimerEvent: {}
+[2.104509] (-) TimerEvent: {}
+[2.204802] (-) TimerEvent: {}
+[2.305100] (-) TimerEvent: {}
+[2.405396] (-) TimerEvent: {}
+[2.505706] (-) TimerEvent: {}
+[2.605991] (-) TimerEvent: {}
+[2.706286] (-) TimerEvent: {}
+[2.806573] (-) TimerEvent: {}
+[2.906867] (-) TimerEvent: {}
+[3.007161] (-) TimerEvent: {}
+[3.107454] (-) TimerEvent: {}
+[3.207752] (-) TimerEvent: {}
+[3.308054] (-) TimerEvent: {}
+[3.408329] (-) TimerEvent: {}
+[3.508607] (-) TimerEvent: {}
+[3.608887] (-) TimerEvent: {}
+[3.709179] (-) TimerEvent: {}
+[3.809446] (-) TimerEvent: {}
+[3.846645] (examples_sum) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sum\x1b[0m\n'}
+[3.909611] (-) TimerEvent: {}
+[4.010012] (-) TimerEvent: {}
+[4.110303] (-) TimerEvent: {}
+[4.210594] (-) TimerEvent: {}
+[4.310934] (-) TimerEvent: {}
+[4.339547] (examples_sum) StdoutLine: {'line': b'[100%] Built target sum\n'}
+[4.351190] (examples_sum) CommandEnded: {'returncode': 0}
+[4.373266] (examples_sum) JobProgress: {'identifier': 'examples_sum', 'progress': 'install'}
+[4.387236] (examples_sum) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'usuario'), ('SSH_AGENT_PID', '2499'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'ibus'), ('HOME', '/home/usuario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2316'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=65cee8b7a97adfde2f3fd07d63e4ccd0'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'usuario'), ('JOURNAL_STREAM', '8:57860'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'usuario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/usuario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrob09.act.uji.es:@/tmp/.ICE-unix/2591,unix/labrob09.act.uji.es:/tmp/.ICE-unix/2591'), ('INVOCATION_ID', 'c0e117bb92084d1387f88f94815623ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6eb023c_550a_4889_87f9_9ea8efadfdf2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/build/examples_sum'), ('LC_ALL', 'es_ES.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=65cee8b7a97adfde2f3fd07d63e4ccd0'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum:/opt/ros/foxy')]), 'shell': False}
+[4.395161] (examples_sum) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.398918] (examples_sum) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/lib/examples_sum/sum\n'}
+[4.411061] (-) TimerEvent: {}
+[4.413985] (examples_sum) StdoutLine: {'line': b'-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/lib/examples_sum/sum" to ""\n'}
+[4.414210] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/ament_index/resource_index/package_run_dependencies/examples_sum\n'}
+[4.414552] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/ament_index/resource_index/parent_prefix_path/examples_sum\n'}
+[4.414664] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/environment/ament_prefix_path.sh\n'}
+[4.414793] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/environment/ament_prefix_path.dsv\n'}
+[4.414892] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/environment/path.sh\n'}
+[4.414962] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/environment/path.dsv\n'}
+[4.415040] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/local_setup.bash\n'}
+[4.415136] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/local_setup.sh\n'}
+[4.415378] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/local_setup.zsh\n'}
+[4.415454] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/local_setup.dsv\n'}
+[4.415522] (examples_sum) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/package.dsv\n'}
+[4.415598] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/ament_index/resource_index/packages/examples_sum\n'}
+[4.415667] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/cmake/examples_sumConfig.cmake\n'}
+[4.415734] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/cmake/examples_sumConfig-version.cmake\n'}
+[4.415798] (examples_sum) StdoutLine: {'line': b'-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/examples/sum/install/examples_sum/share/examples_sum/package.xml\n'}
+[4.418185] (examples_sum) CommandEnded: {'returncode': 0}
+[4.483775] (examples_sum) JobEnded: {'identifier': 'examples_sum', 'rc': 0}
+[4.484890] (-) EventReactorShutdown: {}
