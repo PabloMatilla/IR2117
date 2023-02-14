@@ -12,7 +12,13 @@ int main() {
        n++;
        std::cin >> element;
    }
-   std::sort(elements.begin(), elements.end());
+   int count[n];
+   for (int j = 0; j < n; j++) {
+       count[j] = 0;
+        for (int i = 0; i < n; i++)
+            if (elements[i] == elements[0])
+                count[j]++;
+   }
 
    std::cout << "Mode: " << m << std::endl;
    return 0;
