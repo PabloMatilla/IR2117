@@ -12,13 +12,16 @@ int main() {
        n++;
        std::cin >> element;
    }
-   int count[n];
+   int count[n], max;
    for (int j = 0; j < n; j++) {
        count[j] = 0;
         for (int i = 0; i < n; i++)
-            if (elements[i] == elements[0])
+            if (elements[i] == elements[j])
                 count[j]++;
+       if (count[j] > count[max])
+           max = j;
    }
+   m = elements[max];
 
    std::cout << "Mode: " << m << std::endl;
    return 0;
