@@ -24,7 +24,7 @@ add_executable(square src/square.cpp)
 ament_target_dependencies(square rclcpp std_msgs)
 
 install(TARGETS
-    publisher
+    square
     DESTINATION lib/${PROJECT_NAME}
 )
 # uncomment the following section in order to fill in
