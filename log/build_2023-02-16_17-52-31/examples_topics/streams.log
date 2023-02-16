@@ -1,0 +1,71 @@
+[0.040s] Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/topics -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_topics
+[1.680s] -- The C compiler identification is GNU 9.4.0
+[2.936s] -- The CXX compiler identification is GNU 9.4.0
+[3.043s] -- Check for working C compiler: /usr/bin/cc
+[3.300s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.302s] -- Detecting C compiler ABI info
+[3.436s] -- Detecting C compiler ABI info - done
+[3.468s] -- Detecting C compile features
+[3.469s] -- Detecting C compile features - done
+[3.475s] -- Check for working CXX compiler: /usr/bin/c++
+[3.640s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.642s] -- Detecting CXX compiler ABI info
+[3.804s] -- Detecting CXX compiler ABI info - done
+[3.837s] -- Detecting CXX compile features
+[3.839s] -- Detecting CXX compile features - done
+[3.873s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.973s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.974s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.440s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[4.760s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.892s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.617s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[5.783s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.389s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.392s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.432s] -- Looking for pthread.h
+[6.821s] -- Looking for pthread.h - found
+[6.821s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.014s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.015s] -- Looking for pthread_create in pthreads
+[7.141s] -- Looking for pthread_create in pthreads - not found
+[7.141s] -- Looking for pthread_create in pthread
+[7.300s] -- Looking for pthread_create in pthread - found
+[7.302s] -- Found Threads: TRUE  
+[8.255s] -- Configuring done
+[8.302s] -- Generating done
+[8.307s] -- Build files have been written to: /home/pablo/Documentos/IR2117/build/examples_topics
+[8.321s] Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/topics -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_topics
+[8.324s] Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_topics -- -j4 -l4
+[8.409s] [35m[1mScanning dependencies of target subscriber[0m
+[8.410s] [35m[1mScanning dependencies of target publisher[0m
+[9.473s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber.dir/subscriber.cpp.o[0m
+[9.475s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/publisher.cpp.o[0m
+[17.493s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[18.439s] [ 75%] Built target publisher
+[20.340s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[20.740s] [100%] Built target subscriber
+[20.758s] Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_topics -- -j4 -l4
+[20.805s] Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_topics
+[20.822s] -- Install configuration: ""
+[20.823s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/publisher
+[20.824s] -- Set runtime path of "/home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/publisher" to ""
+[20.825s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/subscriber
+[20.828s] -- Set runtime path of "/home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/subscriber" to ""
+[20.828s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/package_run_dependencies/examples_topics
+[20.829s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/parent_prefix_path/examples_topics
+[20.829s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/ament_prefix_path.sh
+[20.830s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/ament_prefix_path.dsv
+[20.830s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/path.sh
+[20.830s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/path.dsv
+[20.831s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.bash
+[20.831s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.sh
+[20.831s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.zsh
+[20.831s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.dsv
+[20.832s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/package.dsv
+[20.832s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/packages/examples_topics
+[20.833s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/cmake/examples_topicsConfig.cmake
+[20.833s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/cmake/examples_topicsConfig-version.cmake
+[20.833s] -- Installing: /home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/package.xml
+[20.842s] Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_topics

@@ -1,0 +1,17 @@
+/home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/publisher
+/home/pablo/Documentos/IR2117/install/examples_topics/lib/examples_topics/subscriber
+/home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/package_run_dependencies/examples_topics
+/home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/parent_prefix_path/examples_topics
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/ament_prefix_path.sh
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/ament_prefix_path.dsv
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/path.sh
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/environment/path.dsv
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.bash
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.sh
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.zsh
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/local_setup.dsv
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/package.dsv
+/home/pablo/Documentos/IR2117/install/examples_topics/share/ament_index/resource_index/packages/examples_topics
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/cmake/examples_topicsConfig.cmake
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/cmake/examples_topicsConfig-version.cmake
+/home/pablo/Documentos/IR2117/install/examples_topics/share/examples_topics/package.xml

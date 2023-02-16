@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target square[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[01m[K/home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:29:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kn2[m[K’ was not declared in this scope; did you mean ‘[01m[Ki2[m[K’?
+   29 |     int i2=0; [01;31m[Kn2[m[K=1000 ;
+      |               [01;31m[K^~[m[K
+      |               [32m[Ki2[m[K
+[01m[K/home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:33:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+   33 |       message.angular.z = v
+      |                            [01;31m[K^[m[K
+      |                            [32m[K;[m[K
+   34 |       [32m[Krclcpp[m[K::spin_some(node);
+      |       [32m[K~~~~~~[m[K                
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

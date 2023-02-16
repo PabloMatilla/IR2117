@@ -1,0 +1,6 @@
+Invoking command in '/home/pablo/Documentos/IR2117/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/robot_trajectory
+Invoked command in '/home/pablo/Documentos/IR2117/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/robot_trajectory
+Invoking command in '/home/pablo/Documentos/IR2117/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/robot_trajectory -- -j4 -l4
+Invoked command in '/home/pablo/Documentos/IR2117/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/robot_trajectory -- -j4 -l4
+Invoking command in '/home/pablo/Documentos/IR2117/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/robot_trajectory
+Invoked command in '/home/pablo/Documentos/IR2117/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/robot_trajectory

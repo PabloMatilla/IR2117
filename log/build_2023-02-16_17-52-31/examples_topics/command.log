@@ -1,0 +1,6 @@
+Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/topics -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_topics
+Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/topics -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_topics
+Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_topics -- -j4 -l4
+Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_topics -- -j4 -l4
+Invoking command in '/home/pablo/Documentos/IR2117/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_topics
+Invoked command in '/home/pablo/Documentos/IR2117/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_topics

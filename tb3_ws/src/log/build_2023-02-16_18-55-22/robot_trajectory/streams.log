@@ -1,0 +1,26 @@
+[0.044s] Invoking command in '/home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory -- -j4 -l4
+[0.162s] [35m[1mScanning dependencies of target square[0m
+[0.230s] [ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[7.468s] [100%] [32m[1mLinking CXX executable square[0m
+[7.889s] [100%] Built target square
+[7.915s] Invoked command in '/home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory -- -j4 -l4
+[8.001s] Invoking command in '/home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory
+[8.021s] -- Install configuration: ""
+[8.022s] -- Installing: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square
+[8.026s] -- Set runtime path of "/home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square" to ""
+[8.027s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/package_run_dependencies/robot_trajectory
+[8.027s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/parent_prefix_path/robot_trajectory
+[8.028s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.sh
+[8.028s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.dsv
+[8.028s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.sh
+[8.029s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.dsv
+[8.029s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.bash
+[8.029s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.sh
+[8.030s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.zsh
+[8.030s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.dsv
+[8.030s] -- Installing: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.dsv
+[8.030s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/packages/robot_trajectory
+[8.031s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig.cmake
+[8.031s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig-version.cmake
+[8.032s] -- Up-to-date: /home/pablo/Documentos/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.xml
+[8.034s] Invoked command in '/home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory
