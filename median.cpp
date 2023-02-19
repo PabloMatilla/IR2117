@@ -14,6 +14,13 @@ int main() {
     }
     std::sort(elements.begin(), elements.end());
 
+    if (n % 2 == 0) {
+        std::cout << "Even" << std::endl;
+    } else {
+        std::cout << "Odd" << std::endl;
+
+    }
+
     std::cout << "Median: " << m << std::endl;
     return 0;
 }
