@@ -12,6 +12,7 @@ int main() {
         n++;
         std::cin >> element;
     }
+    std::sort(elements.begin(), elements.end());
 
     std::cout << "Median: " << m << std::endl;
     return 0;
