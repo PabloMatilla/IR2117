@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     if (n % 2 == 0) {
        std::cout << "Even" << std::endl;
     } else {
-       std::cout << "Odd" << std::endl;
+       m = elements[n/2];
     }
 	
 
