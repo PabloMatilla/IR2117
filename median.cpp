@@ -15,7 +15,7 @@ int main() {
     std::sort(elements.begin(), elements.end());
 
     if (n % 2 == 0) {
-        std::cout << "Even" << std::endl;
+        m = double(elements[n/2 -1] + elements[n/2])/2;
     } else {
         m = elements[n/2];
 
