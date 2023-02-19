@@ -13,6 +13,13 @@ int main(int argc, char** argv) {
         std::cin >> element;
     }
     std::sort(elements.begin(), elements.end());
+
+    if (n % 2 == 0) { // Impar
+        std::cout << "Even" << std::endl;
+    } else { // Par
+        std::cout << "Odd" << std::endl;
+    }
+
     std::cout << "Median: " << m << std::endl;
     return 0;
 }
