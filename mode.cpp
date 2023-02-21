@@ -1,17 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "utils.hpp"
 
 int main() {
    double m = 0;
-   int element, n = 0;
-   std::vector<int> elements;
-   std::cin >> element;
-   while(!std::cin.eof()) {
-       elements.push_back(element);
-       n++;
-       std::cin >> element;
-   }
+   std::vector<int> elements = ReadElements();
+   int n = elements.size();
    int count[n], max;
    for (int j = 0; j < n; j++) {
        count[j] = 0;
