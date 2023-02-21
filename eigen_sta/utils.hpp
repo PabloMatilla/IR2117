@@ -2,5 +2,7 @@
 #include <Eigen/Dense>
 
 using Eigen::MatrixXd;
+using Eigen::VectorXd;
 
-MatrixXd LeerElementos();
+MatrixXd LeerElementosM();
+VectorXd LeerElementosV();

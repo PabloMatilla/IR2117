@@ -4,10 +4,10 @@
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
 
-MatrixXd LeerElementos() {
+MatrixXd LeerElementosM() {
     int n;
     double sumamax = 0;
-    std::cout << "Introduzca el tamano de la matrix";
+    std::cout << "Introduzca el tamano de la matrix: ";
     std::cin >> n;
 
     MatrixXd m(n, n);
@@ -18,6 +18,22 @@ MatrixXd LeerElementos() {
             std::cin >> element;
             m(i, j) = element;
         }
+    }
+    return m;
+}
+
+VectorXd LeerElementosV() {
+    int n;
+    double sumamax = 0;
+    std::cout << "Introduzca el tamano del vector: ";
+    std::cin >> n;
+
+    VectorXd m(n);
+    for (int i = 0; i < n; i++) {
+            double element;
+            std::cout << "Introduce el elemento ("<< i << "): ";
+            std::cin >> element;
+            m(i) = element;
     }
     return m;
 }
