@@ -4,8 +4,12 @@
 
 using Eigen::VectorXd;
 int main() {
-    VectorXd v = LeerElementosV();
-    std::cout << "La media es: " << v.mean() << std::endl;
+    double m;
+    VectorXd elements = LeerElementosV();
+    int n = elements.size();
+
+
+    std::cout << "Median: " << m << std::endl;
     return 0;
 }
 
