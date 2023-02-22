@@ -1,7 +1,7 @@
 all: prueba median mode
 
 prueba: prueba.cpp utils.o
-    g++ -I/usr/include/eigen3 -o prueba prueba.cpp utils.ccp
+    g++ -I/usr/include/eigen3 -o prueba prueba.cpp utils.o
 
 median: median.cpp utils.o
     g++ -I/usr/include/eigen3 -o median median.cpp utils.o
