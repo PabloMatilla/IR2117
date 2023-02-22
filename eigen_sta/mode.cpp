@@ -13,6 +13,17 @@ int main() {
         dic[elements[i]]++;
     }
 
+    int m_dic = 0;
+
+    for (auto pair : dic) {
+        int value = pair.first;
+        int count = pair.second;
+        if (count > m_dic) {
+            m = value;
+            m_dic = count;
+        }
+    }
+
     std::cout << "Mode: " << m << std::endl;
     return 0;
 }
