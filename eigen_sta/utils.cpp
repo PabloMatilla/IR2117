@@ -35,14 +35,5 @@ VectorXd LeerElementosV() {
         m[i] = element;
         i++;
     }
-
-     /*
-    for (int i = 0; i < n; i++) {
-            double element;
-            std::cout << "Introduce el elemento ("<< i << "): ";
-            std::cin >> element;
-            m(i) = element;
-    } */
-
     return m.segment(0,i);
 }
