@@ -1,0 +1,21 @@
+[0.018s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6
+[0.050s] [35m[1mScanning dependencies of target square[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[1.095s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.095s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:35:3:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kfor[m[K’
+[1.095s]    35 |   [01;31m[Kfor[m[K(int j = 0; j<4; j++) {
+[1.095s]       |   [01;31m[K^~~[m[K
+[1.096s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:35:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+[1.096s]    35 |   for(int j = 0; [01;31m[Kj[m[K<4; j++) {
+[1.096s]       |                  [01;31m[K^[m[K
+[1.096s]       |                  [32m[Kjn[m[K
+[1.096s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:30:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klinear_iterations[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.096s]    30 |   double [01;35m[Klinear_iterations[m[K = square_length / (0.01 * lineal_speed);
+[1.097s]       |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[1.097s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:31:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangular_iterations[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.097s]    31 |   double [01;35m[Kangular_iterations[m[K = 3.1416/2 / (0.01 * angular_speed);
+[1.097s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.805s] make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+[1.805s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
+[1.806s] make: *** [Makefile:141: all] Error 2
+[1.809s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6
