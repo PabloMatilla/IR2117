@@ -21,4 +21,6 @@ int main () {
     }
     std::cout << "La matriz es: " << std::endl << m << std::endl;
     std::cout << "La suma mayor es: " << sumamax << std::endl;
+    double s = m.row(0).sum();
+    std::cout << "The sum of row 0 is " << s << std::endl;
 }
