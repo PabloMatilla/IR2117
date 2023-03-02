@@ -5,8 +5,16 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include <iostream>
 
+double x, y;
+
+
 void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     std::cout << msg << std::endl;
+    x = msg->pose.pose.position.x;
+    y = msg->pose.pose.position.y;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "y: " << y << std::endl;
+    
 }
 
 int main(int argc, char * argv[])
@@ -16,6 +24,8 @@ int main(int argc, char * argv[])
   
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
+  
+  
   
   rclcpp::spin(node);
   rclcpp::shutdown();
