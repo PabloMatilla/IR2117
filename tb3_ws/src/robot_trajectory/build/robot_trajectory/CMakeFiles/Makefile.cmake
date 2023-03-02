@@ -587,7 +587,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/square.dir/DependInfo.cmake"
+  "CMakeFiles/square_odom.dir/DependInfo.cmake"
   "CMakeFiles/robot_trajectory_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   )
