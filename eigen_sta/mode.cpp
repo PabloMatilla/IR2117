@@ -6,7 +6,8 @@
 using Eigen::VectorXd;
 int main() {
     double m;
-    VectorXd elements = LeerElementosV();
+    VectorXd elements;
+    std::cin >> elements;
     std::map<int, int> dic;
 
     for(int i = 0; i < elements.size(); i++) {
