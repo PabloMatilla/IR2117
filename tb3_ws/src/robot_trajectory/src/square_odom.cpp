@@ -41,44 +41,46 @@ int main(int argc, char * argv[])
 
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
-
   // Esperar a que el nodo obtenga la primera posición y orientación
-  while (rclcpp::ok() && (x_init == 0.0 && y_init == 0.0 && ang_init == 0.0)) {
-      rclcpp::spin_some(node);
+  rclcpp::spin_some(node);
 
-      // Calcular la distancia recorrida desde el punto inicial
-      double dist = sqrt(pow(x - x_init, 2) + pow(y - y_init, 2));
-      std::cout << "Diferencia pos: " << dist << std::endl;
+  for (int i = 0; i < 4; i++) {
+    // Guardar la posición y orientación inicial
+    x_init = x;
+    y_init = y;
+    ang_init = ang;
 
 
-    // Calcular la diferencia de ángulo desde el ángulo inicial
-    double ang_diff = ang - ang_init;
-    std::cout << "Diferencia angulo: " << ang_diff << std::endl << std::endl;
+    // Iniciar movimiento
+    double dist = 0.0;
+    while (rclcpp::ok() && dist < 1.0) {
+        rclcpp::spin_some(node);
 
-      geometry_msgs::msg::Twist twist;
-      twist.linear.x = 0.2;  // Velocidad lineal de 0.2 m/s
-      twist.angular.z = 0.0; // Velocidad angular de 0 rad/s
-      publisher->publish(twist);
+        // Calcular la distancia recorrida desde el punto inicial
+        dist = sqrt(pow(x - x_init, 2) + pow(y - y_init, 2));
+        std::cout << "Distancia recorrida: " << dist << std::endl;
 
-     if (dist >= 1.0) {
-        x_init = x;
-        y_init = y;
-        ang_init = ang;
+        // Avanzar recto
         geometry_msgs::msg::Twist twist;
-        twist.angular.z = M_PI / 2;
+        twist.linear.x = 0.1;  // Velocidad lineal de 0.1 m/s
+        twist.angular.z = 0.0; // Velocidad angular de 0 rad/s
         publisher->publish(twist);
+
     }
 
+    // Girar 90 grados
+    double ang_diff = 0.0;
+    while (rclcpp::ok() && std::abs(ang_diff) < 90.0) {
+        rclcpp::spin_some(node);
+
+          ang_diff = ang - ang_init;
+        std::cout << "Diferencia de ángulo: " << ang_diff << std::endl;
+
+        // Publicar mensaje de control para girar
+        geometry_msgs::msg::Twist twist;
+        twist.linear.x = 0.0;    // Velocidad lineal nula
+        twist.angular.z = 0.2;   // Velocidad angular de 0.2 rad/s
+        publisher->publish(twist);
+    }
   }
-
-  // Guardar la posición y orientación inicial
-  x_init = x;
-  y_init = y;
-  ang_init = ang;
-
-
-  rclcpp::spin(node);
-  rclcpp::shutdown();
-  return 0;
 }
-

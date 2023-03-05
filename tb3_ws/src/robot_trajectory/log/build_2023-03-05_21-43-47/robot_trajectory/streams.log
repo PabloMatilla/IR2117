@@ -1,0 +1,26 @@
+[0.043s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
+[0.146s] [35m[1mScanning dependencies of target square_odom[0m
+[0.219s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[12.136s] [100%] [32m[1mLinking CXX executable square_odom[0m
+[12.911s] [100%] Built target square_odom
+[12.936s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
+[13.015s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory
+[13.036s] -- Install configuration: ""
+[13.036s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/lib/robot_trajectory/square_odom
+[13.041s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/lib/robot_trajectory/square_odom" to ""
+[13.042s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/ament_index/resource_index/package_run_dependencies/robot_trajectory
+[13.042s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/ament_index/resource_index/parent_prefix_path/robot_trajectory
+[13.043s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.sh
+[13.043s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.dsv
+[13.044s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/environment/path.sh
+[13.044s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/environment/path.dsv
+[13.044s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/local_setup.bash
+[13.045s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/local_setup.sh
+[13.045s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/local_setup.zsh
+[13.045s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/local_setup.dsv
+[13.046s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/package.dsv
+[13.046s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/ament_index/resource_index/packages/robot_trajectory
+[13.047s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig.cmake
+[13.048s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig-version.cmake
+[13.048s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install/robot_trajectory/share/robot_trajectory/package.xml
+[13.051s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory

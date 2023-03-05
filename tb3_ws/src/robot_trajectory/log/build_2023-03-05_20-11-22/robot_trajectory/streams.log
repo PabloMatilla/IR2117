@@ -1,0 +1,14 @@
+[0.033s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
+[0.126s] [35m[1mScanning dependencies of target square_odom[0m
+[0.194s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[2.798s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.798s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:77:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble ang_diff[m[K’
+[2.798s]    77 |     double [01;31m[Kang_diff[m[K = std::abs(ang - ang_init);
+[2.798s]       |            [01;31m[K^~~~~~~~[m[K
+[2.798s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:60:12:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble ang_diff[m[K’ previously declared here
+[2.799s]    60 |     double [01;36m[Kang_diff[m[K = ang - ang_init;
+[2.799s]       |            [01;36m[K^~~~~~~~[m[K
+[5.507s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[5.507s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Error 2
+[5.508s] make: *** [Makefile:141: all] Error 2
+[5.511s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4

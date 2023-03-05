@@ -1,0 +1,10 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:77:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble ang_diff[m[K’
+   77 |     double [01;31m[Kang_diff[m[K = std::abs(ang - ang_init);
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:60:12:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble ang_diff[m[K’ previously declared here
+   60 |     double [01;36m[Kang_diff[m[K = ang - ang_init;
+      |            [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
