@@ -83,4 +83,6 @@ int main(int argc, char * argv[])
         publisher->publish(twist);
     }
   }
+  rclcpp::shutdown();
+  return 0;
 }
