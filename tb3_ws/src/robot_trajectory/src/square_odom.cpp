@@ -29,11 +29,15 @@ void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
 
     std::cout << "x: " << x << std::endl;
     std::cout << "y: " << y << std::endl;
-    std::cout << "Ángulo: " << ang << std::endl;
+    std::cout << "Angulo: " << ang << std::endl;
 
     // Calcular la distancia recorrida desde el punto inicial
     double dist = sqrt(pow(x - x_init, 2) + pow(y - y_init, 2));
     std::cout << "Diferencia pos: " << dist << std::endl;
+
+    // Calcular la diferencia de ángulo desde el ángulo inicial
+    double ang_diff = ang - ang_init;
+    std::cout << "Diferencia angulo: " << ang_diff << std::endl << std::endl;
 
 }
 
