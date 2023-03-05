@@ -1,8 +1,11 @@
+#ifndef UTILS_HPP
+#define UTILS_HPP
+
 #include <iostream>
 #include <Eigen/Dense>
 
-using Eigen::MatrixXd;
 using Eigen::VectorXd;
 
-MatrixXd LeerElementosM();
-VectorXd LeerElementosV();
+std::istream& operator>>(std::istream& in, VectorXd& v);
+
+#endif /* UTILS_HPP */

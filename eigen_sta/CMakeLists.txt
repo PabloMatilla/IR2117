@@ -10,4 +10,5 @@ mode: mode.ccp utils.o
     g++ -I/usr/include/eigen3 -o mode mode.cpp utils.o
 
 utils.o: utils.ccp utils.hpp
-    g++ -I/usr/include/eigen3 -c utils.ccp
+    g++ -I/usr/include/eigen3 -c utils.cpp
+
