@@ -31,13 +31,6 @@ void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     std::cout << "y: " << y << std::endl;
     std::cout << "Angulo: " << ang << std::endl;
 
-    // Calcular la distancia recorrida desde el punto inicial
-    double dist = sqrt(pow(x - x_init, 2) + pow(y - y_init, 2));
-    std::cout << "Diferencia pos: " << dist << std::endl;
-
-    // Calcular la diferencia de ángulo desde el ángulo inicial
-    double ang_diff = ang - ang_init;
-    std::cout << "Diferencia angulo: " << ang_diff << std::endl << std::endl;
 
 }
 
@@ -52,6 +45,30 @@ int main(int argc, char * argv[])
   // Esperar a que el nodo obtenga la primera posición y orientación
   while (rclcpp::ok() && (x_init == 0.0 && y_init == 0.0 && ang_init == 0.0)) {
       rclcpp::spin_some(node);
+
+      // Calcular la distancia recorrida desde el punto inicial
+      double dist = sqrt(pow(x - x_init, 2) + pow(y - y_init, 2));
+      std::cout << "Diferencia pos: " << dist << std::endl;
+
+
+    // Calcular la diferencia de ángulo desde el ángulo inicial
+    double ang_diff = ang - ang_init;
+    std::cout << "Diferencia angulo: " << ang_diff << std::endl << std::endl;
+
+      geometry_msgs::msg::Twist twist;
+      twist.linear.x = 0.2;  // Velocidad lineal de 0.2 m/s
+      twist.angular.z = 0.0; // Velocidad angular de 0 rad/s
+      publisher->publish(twist);
+
+     if (dist >= 1.0) {
+        x_init = x;
+        y_init = y;
+        ang_init = ang;
+        geometry_msgs::msg::Twist twist;
+        twist.angular.z = M_PI / 2;
+        publisher->publish(twist);
+    }
+
   }
 
   // Guardar la posición y orientación inicial
