@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cmath>
 
+double x_init, y_init, ang_init;
 double x, y;
 double ang;
 
@@ -25,6 +26,9 @@ void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
 
     // Obtener el ángulo en grados y mostrarlo
     ang = yaw * 180.0 / M_PI;
+
+    std::cout << "x: " << x << std::endl;
+    std::cout << "y: " << y << std::endl;
     std::cout << "Ángulo: " << ang << std::endl;
 }
 
@@ -35,6 +39,17 @@ int main(int argc, char * argv[])
 
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
+
+  // Esperar a que el nodo obtenga la primera posición y orientación
+  while (rclcpp::ok() && (x_init == 0.0 && y_init == 0.0 && ang_init == 0.0)) {
+      rclcpp::spin_some(node);
+  }
+
+  // Guardar la posición y orientación inicial
+  x_init = x;
+  y_init = y;
+  ang_init = ang;
+
 
   rclcpp::spin(node);
   rclcpp::shutdown();
