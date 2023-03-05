@@ -1,11 +1,11 @@
-all: median mode
+cmake_minimum_required(VERSION 3.0)
+project(eigen_sta)
 
-median: median.cpp utils.o
-   g++ -I$HOME/Documents/eigen3.4 -o median median.cpp utils.o
+# Agregar la ruta a la carpeta que contiene la librería Eigen
+include_directories("$ENV{HOME}/Documents/eigen3.4")
 
-mode: mode.ccp utils.o
-    g++ -I$HOME/Documents/eigen3.4 -o mode mode.cpp utils.o
+# Crear un ejecutable para median
+add_executable(median median.cpp utils.cpp)
 
-utils.o: utils.ccp utils.hpp
-    g++ -I$HOME/Documents/eigen3.4 -c utils.cpp
-
+# Crear un ejecutable para mode
+add_executable(mode mode.cpp utils.cpp)
