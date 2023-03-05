@@ -1,0 +1,11 @@
+[0.037s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
+[0.125s] [35m[1mScanning dependencies of target square_odom[0m
+[0.181s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.402s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf/transform_datatypes.h: No such file or directory
+[0.402s]     6 | #include [01;31m[K<tf/transform_datatypes.h>[m[K
+[0.403s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.403s] compilation terminated.
+[0.407s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[0.407s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Error 2
+[0.407s] make: *** [Makefile:141: all] Error 2
+[0.411s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4

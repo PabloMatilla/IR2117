@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(robot_trajectory)
 
-# Default to C99
+# Default to C99.
 if(NOT CMAKE_C_STANDARD)
   set(CMAKE_C_STANDARD 99)
 endif()
@@ -20,9 +20,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
 
 add_executable(square_odom src/square_odom.cpp)
-ament_target_dependencies(square_odom rclcpp geometry_msgs nav_msgs)
+ament_target_dependencies(square_odom rclcpp geometry_msgs nav_msgs tf2_geometry_msgs)
 
 install(TARGETS
     square_odom

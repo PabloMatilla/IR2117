@@ -1,7 +1,7 @@
 set(_AMENT_PACKAGE_NAME "robot_trajectory")
 set(robot_trajectory_VERSION "0.0.0")
 set(robot_trajectory_MAINTAINER "Pablo Exposito <al415550@uji.es>")
-set(robot_trajectory_BUILD_DEPENDS "rclcpp" "geometry_msgs" "nav_msgs")
+set(robot_trajectory_BUILD_DEPENDS "rclcpp" "geometry_msgs" "nav_msgs" "tf2_geometry_msgs")
 set(robot_trajectory_BUILDTOOL_DEPENDS "ament_cmake")
 set(robot_trajectory_BUILD_EXPORT_DEPENDS )
 set(robot_trajectory_BUILDTOOL_EXPORT_DEPENDS )
