@@ -5,11 +5,12 @@
 using Eigen::VectorXd;
 int main() {
     double m;
-    VectorXd elements = LeerElementosV();
+    VectorXd elements;
+    std::cin >> elements;
     int n = elements.size();
 
-    if (n % 2 == 0) {
-        m = double(elements[n/2 -1] + elements[n/2])/2;
+    if (n % 2) {
+        m = double(elements[(n)/2 ] + elements[n/2+1])/2;
     } else {
         m  = elements[n/2];
     }
