@@ -7,7 +7,7 @@ int main() {
     double m;
     VectorXd elements;
     std::cin >> elements;
-    std::sort(elements.data(), elements.data() + elements.size());
+    std::sort(elements.begin(), elements.end());
     int n = elements.size();
 
     if (n % 2) {
