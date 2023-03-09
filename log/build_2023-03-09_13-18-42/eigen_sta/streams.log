@@ -1,0 +1,18 @@
+[0.053s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/build/eigen_sta': /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/eigen_sta -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/install/eigen_sta
+[0.189s] -- The C compiler identification is GNU 9.4.0
+[0.253s] -- The CXX compiler identification is GNU 9.4.0
+[0.261s] -- Check for working C compiler: /usr/bin/cc
+[0.338s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.341s] -- Detecting C compiler ABI info
+[0.411s] -- Detecting C compiler ABI info - done
+[0.422s] -- Detecting C compile features
+[0.423s] -- Detecting C compile features - done
+[0.427s] -- Check for working CXX compiler: /usr/bin/c++
+[0.506s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.507s] -- Detecting CXX compiler ABI info
+[0.586s] -- Detecting CXX compiler ABI info - done
+[0.602s] -- Detecting CXX compile features
+[0.602s] -- Detecting CXX compile features - done
+[0.604s] -- Configuring done
+[0.608s] -- Generating done
+[0.609s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/eigen_sta

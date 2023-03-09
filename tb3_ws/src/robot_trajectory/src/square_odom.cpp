@@ -42,11 +42,14 @@ int main(int argc, char * argv[])
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   node->declare_parameter("linear_speed", 0.1);
   node->declare_parameter("angular_speed", 0.2);
-  node->declare_parameter("square_length", 1.0);
+  node->declare_parameter("square_length", 2.0);
   auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
   
+  rclcpp::spin_some(node);
+
+  
   double linear_speed = node->get_parameter("linear_speed").get_parameter_value().get<double>();
-  double angular_speed = node->get_parameter("ang ular_speed").get_parameter_value().get<double>();
+  double angular_speed = node->get_parameter("angular_speed").get_parameter_value().get<double>();
   double square_length = node->get_parameter("square_length").get_parameter_value().get<double>();
   // Esperar a que el nodo obtenga la primera posición y orientación
   rclcpp::spin_some(node);
@@ -60,7 +63,7 @@ int main(int argc, char * argv[])
 
     // Iniciar movimiento
     double dist = 0.0;
-    while (rclcpp::ok() && dist < 1.0) {
+    while (rclcpp::ok() && dist < square_length) {
         rclcpp::spin_some(node);
 
         // Calcular la distancia recorrida desde el punto inicial
@@ -69,7 +72,7 @@ int main(int argc, char * argv[])
 
         // Avanzar recto
         geometry_msgs::msg::Twist twist;
-        twist.linear.x = 0.1;  // Velocidad lineal de 0.1 m/s
+        twist.linear.x = linear_speed;  // Velocidad lineal de 0.1 m/s
         twist.angular.z = 0.0; // Velocidad angular de 0 rad/s
         publisher->publish(twist);
 
@@ -86,7 +89,7 @@ int main(int argc, char * argv[])
         // Publicar mensaje de control para girar
         geometry_msgs::msg::Twist twist;
         twist.linear.x = 0.0;    // Velocidad lineal nula
-        twist.angular.z = 0.2;   // Velocidad angular de 0.2 rad/s
+        twist.angular.z = angular_speed;   // Velocidad angular de 0.2 rad/s
         publisher->publish(twist);
     }
   }

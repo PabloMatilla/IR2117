@@ -1,0 +1,14 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:48:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klinear_speed[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   48 |   double [01;35m[Klinear_speed[m[K = node->get_parameter("linear_speed").get_parameter_value().get<double>();
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:49:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangular_speed[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   49 |   double [01;35m[Kangular_speed[m[K = node->get_parameter("ang ular_speed").get_parameter_value().get<double>();
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:50:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksquare_length[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   50 |   double [01;35m[Ksquare_length[m[K = node->get_parameter("square_length").get_parameter_value().get<double>();
+      |          [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** Se borra el archivo 'CMakeFiles/square_odom.dir/src/square_odom.cpp.o'
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción

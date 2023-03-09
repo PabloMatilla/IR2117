@@ -34,6 +34,14 @@ _colcon_prefix_chain_sh_source_script() {
 COLCON_CURRENT_PREFIX="/opt/ros/foxy"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
+# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
+COLCON_CURRENT_PREFIX="/home/usuario/Documentos/GitHub/IR2117/install"
+_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
+
+# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
+COLCON_CURRENT_PREFIX="/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/install"
+_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
+
 
 # source this prefix
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
