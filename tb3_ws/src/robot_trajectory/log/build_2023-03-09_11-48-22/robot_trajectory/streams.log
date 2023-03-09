@@ -1,0 +1,37 @@
+[0.042s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6
+[0.147s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.183s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.397s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.443s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.602s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.604s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.721s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.751s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.806s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[0.811s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.116s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.262s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.295s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.295s] -- Configured cppcheck include dirs: 
+[1.295s] -- Configured cppcheck exclude dirs and/or files: 
+[1.323s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.323s] -- Configured cpplint exclude dirs and/or files: 
+[1.327s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.335s] -- Added test 'lint_cmake' to check CMake code style
+[1.339s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.367s] -- Added test 'uncrustify' to check C / C++ code style
+[1.367s] -- Configured uncrustify additional arguments: 
+[1.371s] -- Added test 'xmllint' to check XML markup files
+[1.387s] -- Configuring done
+[1.457s] -- Generating done
+[1.471s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory
+[1.546s] [35m[1mScanning dependencies of target square_odom[0m
+[1.641s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[448.716s] [100%] [32m[1mLinking CXX executable square_odom[0m
+[712.274s] make[2]: *** Se borra el archivo 'square_odom'
+[712.274s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:172: square_odom] Interrupción
+[712.274s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Interrupción
+[712.274s] make: *** [Makefile:141: all] Interrupción
+[712.276s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6

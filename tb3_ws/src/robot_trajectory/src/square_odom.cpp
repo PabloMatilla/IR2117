@@ -83,6 +83,10 @@ int main(int argc, char * argv[])
         publisher->publish(twist);
     }
   }
+  geometry_msgs::msg::Twist twist;
+        twist.linear.x = 0.0;    // Velocidad lineal nula
+        twist.angular.z = 0.0;   // Velocidad angular nula
+        publisher->publish(twist);
   rclcpp::shutdown();
   return 0;
 }

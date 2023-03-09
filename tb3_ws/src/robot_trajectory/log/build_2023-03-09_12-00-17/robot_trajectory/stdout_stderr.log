@@ -1,0 +1,5 @@
+[ 50%] [32m[1mLinking CXX executable square_odom[0m
+make[2]: *** Se borra el archivo 'square_odom'
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:172: square_odom] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción
