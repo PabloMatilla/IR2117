@@ -40,7 +40,14 @@ int main(int argc, char * argv[])
   auto node = rclcpp::Node::make_shared("square_odom");
 
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+  node->declare_parameter("linear_speed", 0.1);
+  node->declare_parameter("angular_speed", 0.2);
+  node->declare_parameter("square_length", 1.0);
   auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
+  
+  double linear_speed = node->get_parameter("linear_speed").get_parameter_value().get<double>();
+  double angular_speed = node->get_parameter("ang ular_speed").get_parameter_value().get<double>();
+  double square_length = node->get_parameter("square_length").get_parameter_value().get<double>();
   // Esperar a que el nodo obtenga la primera posición y orientación
   rclcpp::spin_some(node);
 
