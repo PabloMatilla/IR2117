@@ -18,6 +18,8 @@ int main () {
             std::cin >> m(i,j);
     std::cout << "The matrix is: " << std::endl << m << std::endl;
 
-    double s = m.row(0).sum();
-    std::cout << "The sum of row 0 is " << s << std::endl;
+    VectorXd s(rows);
+    for (int i = 0; i < rows; i++)
+        s(i) = m.row(i).sum();
+    std::cout << "The sum of rows is " << s << std::endl;
 }
