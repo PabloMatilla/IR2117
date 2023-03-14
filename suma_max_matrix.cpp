@@ -17,4 +17,7 @@ int main () {
         for (int j= 0; j < cols; j++)
             std::cin >> m(i,j);
     std::cout << "The matrix is: " << std::endl << m << std::endl;
+
+    double s = m.row(0).sum();
+    std::cout << "The sum of row 0 is " << s << std::endl;
 }
