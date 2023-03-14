@@ -31,6 +31,13 @@ int main () {
     std::cout << "The sum of columns is " << std::endl << s << std::endl;
     double maxColSum = s.maxCoeff();
     std::cout << "The maximun sum of columns is " << maxColSum << std::endl;
-    double maxRowColSum = maxRowSum > maxColSum ? maxRowSum : maxColSum;
-    std::cout << "The maximum sum of rows or colums is " << maxRowColSum << std::endl;
+    double maxSum = maxRowSum > maxColSum ? maxRowSum : maxColSum;
+    std::cout << "The maximum sum of rows or colums is " << maxSum << std::endl;
+    double sumMainDiag = m.diagonal().sum();
+    std::cout << "The sum of the main diagonal is " << sumMainDiag << std::endl;
+    double sumSecDiag = m.colwise().reverse().diagonal().sum();
+    std::cout << "The sum of the secondary diagonal is " << sumSecDiag << std::endl;
+    maxSum = maxSum > sumMainDiag ? maxSum : sumMainDiag;
+    maxSum = maxSum > sumSecDiag ? maxSum : sumSecDiag;
+    std::cout << "The maximum sum is " << maxSum << std::endl;
 }
