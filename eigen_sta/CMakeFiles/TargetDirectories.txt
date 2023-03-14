@@ -1,4 +1,0 @@
-/home/usuario/Documentos/GitHub/IR2117/eigen_sta/CMakeFiles/rebuild_cache.dir
-/home/usuario/Documentos/GitHub/IR2117/eigen_sta/CMakeFiles/edit_cache.dir
-/home/usuario/Documentos/GitHub/IR2117/eigen_sta/CMakeFiles/mode.dir
-/home/usuario/Documentos/GitHub/IR2117/eigen_sta/CMakeFiles/median.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/median.dir/median.cpp.o CMakeFiles/median.dir/utils.cpp.o  -o median 

@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/mode.dir/mode.cpp.o CMakeFiles/mode.dir/utils.cpp.o  -o mode 
