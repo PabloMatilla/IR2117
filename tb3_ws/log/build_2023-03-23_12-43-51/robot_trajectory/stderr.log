@@ -1,0 +1,15 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:24:23:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[Kstd_msgs::msg::String[m[K’?
+   24 |   geometry_msgs::msg::[01;31m[KString[m[K message;
+      |                       [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/std_msgs/msg/string.hpp:7[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:7[m[K:
+[01m[K/opt/ros/foxy/include/std_msgs/msg/detail/string__struct.hpp:121:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::String[m[K’ declared here
+  121 | using [01;36m[KString[m[K =
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+   28 |     [01;31m[Kmessage[m[K.linear.x = 0;
+      |     [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
