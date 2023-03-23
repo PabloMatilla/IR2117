@@ -1,0 +1,82 @@
+[0.017s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.044s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.068s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.244s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.270s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.272s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.370s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.407s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.407s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.513s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.537s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.588s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[0.593s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.872s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.935s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.005s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.036s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.036s] -- Configured cppcheck include dirs: 
+[1.036s] -- Configured cppcheck exclude dirs and/or files: 
+[1.067s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.067s] -- Configured cpplint exclude dirs and/or files: 
+[1.071s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.079s] -- Added test 'lint_cmake' to check CMake code style
+[1.083s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.114s] -- Added test 'uncrustify' to check C / C++ code style
+[1.114s] -- Configured uncrustify additional arguments: 
+[1.118s] -- Added test 'xmllint' to check XML markup files
+[1.121s] -- Configuring done
+[1.140s] -- Generating done
+[1.142s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory
+[1.183s] [ 25%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[1.188s] [ 75%] Built target square_odom
+[2.283s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid callback_function()[m[K’:
+[2.284s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:13:12:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+[2.284s]    13 |     return [01;31m[K0[m[K;
+[2.284s]       |            [01;31m[K^[m[K
+[2.287s] In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.287s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.287s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.287s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:4[m[K:
+[2.288s] /usr/include/c++/9/tuple: In instantiation of ‘[01m[Kstruct std::tuple_element<0, std::tuple<> >[m[K’:
+[2.288s] [01m[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:71:9:[m[K   required by substitution of ‘[01m[Ktemplate<class ReturnTypeT, class ... Args> template<long unsigned int N> using argument_type = typename std::tuple_element<N, std::tuple<_Elements ...> >::type [with long unsigned int N = 0; ReturnTypeT = void; Args = {}][m[K’
+[2.288s] [01m[K/opt/ros/foxy/include/rclcpp/subscription_traits.hpp:97:8:[m[K   required from ‘[01m[Kstruct rclcpp::subscription_traits::has_message_type<void (&)(), std::allocator<void>, void, void, void, void>[m[K’
+[2.288s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:204:5:[m[K   required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = void (&)(); AllocatorT = std::allocator<void>; CallbackMessageT = <missing>; SubscriptionT = <missing>; MessageMemoryStrategyT = <missing>][m[K’
+[2.288s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:21:111:[m[K   required from here
+[2.288s] [01m[K/usr/include/c++/9/tuple:1303:25:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: tuple index is in range
+[2.288s]  1303 |       static_assert([01;31m[K__i < tuple_size<tuple<>>::value[m[K,
+[2.288s]       |                     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.288s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:32[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.288s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.288s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:4[m[K:
+[2.288s] /opt/ros/foxy/include/rclcpp/function_traits.hpp: In substitution of ‘[01m[Ktemplate<class ReturnTypeT, class ... Args> template<long unsigned int N> using argument_type = typename std::tuple_element<N, std::tuple<_Elements ...> >::type [with long unsigned int N = 0; ReturnTypeT = void; Args = {}][m[K’:
+[2.289s] [01m[K/opt/ros/foxy/include/rclcpp/subscription_traits.hpp:97:8:[m[K   required from ‘[01m[Kstruct rclcpp::subscription_traits::has_message_type<void (&)(), std::allocator<void>, void, void, void, void>[m[K’
+[2.289s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:204:5:[m[K   required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = sensor_msgs::msg::LaserScan_<std::allocator<void> >; CallbackT = void (&)(); AllocatorT = std::allocator<void>; CallbackMessageT = <missing>; SubscriptionT = <missing>; MessageMemoryStrategyT = <missing>][m[K’
+[2.289s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:21:111:[m[K   required from here
+[2.289s] [01m[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:71:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::tuple_element<0, std::tuple<> >[m[K’
+[2.289s]    71 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[2.289s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.289s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.289s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:21:111:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription<sensor_msgs::msg::LaserScan>(const char [11], int, void (&)())[m[K’
+[2.289s]    21 |   auto subscriber = node->create_subscription<sensor_msgs::msg::LaserScan>("laser_scan", 10, callback_function[01;31m[K)[m[K;
+[2.289s]       |                                                                                                               [01;31m[K^[m[K
+[2.289s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.289s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.289s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.289s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:4[m[K:
+[2.289s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.289s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[2.289s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.289s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  substitution of deduced template arguments resulted in errors seen above
+[3.074s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[3.075s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[3.075s] make: *** [Makefile:141: all] Error 2
+[3.076s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
