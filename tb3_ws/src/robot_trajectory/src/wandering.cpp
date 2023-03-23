@@ -11,10 +11,12 @@
 using namespace std::chrono_literals;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
-    std::cout << "Grado 0: " << msg->ranges[0] << std::endl;
-    std::cout << "Grado 90: " << msg->ranges[90] << std::endl;
-    std::cout << "Grado 180: " << msg->ranges[180] << std::endl;
-    std::cout << "Grado 270: " << msg->ranges[270] << "\n"<< std::endl;
+    for (int i = 0; i < 10; i++) {
+        std::cout << "Grado " << i << " : " << msg->ranges[0] << std::endl;
+    }
+    for (int i = 350; i < 359; i++) {
+        std::cout << "Grado " << i << " : " << msg->ranges[0] << std::endl;
+    }
 }
 
 int main(int argc, char * argv[])
