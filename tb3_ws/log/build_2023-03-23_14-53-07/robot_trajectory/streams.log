@@ -1,0 +1,16 @@
+[0.043s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4
+[0.130s] [35m[1mScanning dependencies of target wandering[0m
+[0.180s] [35m[1mScanning dependencies of target square_odom[0m
+[0.191s] [ 25%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.279s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[2.856s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.856s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:23:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krmg[m[K’ was not declared in this scope
+[2.857s]    23 |           minder = [01;31m[Krmg[m[K -> ranges[i];
+[2.857s]       |                    [01;31m[K^~~[m[K
+[5.988s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[5.988s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[5.989s] make[1]: *** Waiting for unfinished jobs....
+[10.973s] [ 75%] [32m[1mLinking CXX executable square_odom[0m
+[12.366s] [ 75%] Built target square_odom
+[12.368s] make: *** [Makefile:141: all] Error 2
+[12.371s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4

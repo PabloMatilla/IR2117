@@ -11,11 +11,18 @@
 using namespace std::chrono_literals;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
+    int minizq = 1000, minder = 1000;
     for (int i = 0; i < 10; i++) {
-        std::cout << "Grado " << i << " : " << msg->ranges[0] << std::endl;
+        if (msg -> ranges[i] < minizq) {
+          minizq = msg -> ranges[i];
+          std::cout << "Distancia min izq: " << minizq << std::endl;
+        }
     }
     for (int i = 350; i < 359; i++) {
-        std::cout << "Grado " << i << " : " << msg->ranges[0] << std::endl;
+        if (msg -> ranges[i] < minder) {
+          minder = msg -> ranges[i];
+          std::cout << "Distancia min der: " << minder  << std::endl;
+        }
     }
 }
 
