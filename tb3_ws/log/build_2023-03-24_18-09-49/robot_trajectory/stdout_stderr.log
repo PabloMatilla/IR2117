@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target square_odom[0m
+[ 50%] Built target wandering
+[ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:43:86:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom_callback[m[K’?
+   43 |   auto subscription = node->create_subscription<nav_msgs::msg::Odometry>("odom", 10, [01;31m[Ktopic_callback[m[K);
+      |                                                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                                      [32m[Kodom_callback[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:48:30:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+   48 |   rclcpp::WallRate loop_rate([01;31m[K10ms[m[K);
+      |                              [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

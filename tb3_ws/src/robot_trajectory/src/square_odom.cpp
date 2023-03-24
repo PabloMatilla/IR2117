@@ -6,11 +6,14 @@
 #include <iostream>
 #include <cmath>
 
+
+using namespace std::chrono_literals;
+
 double x_init, y_init, ang_init;
 double x, y;
 double ang;
 
-void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
+void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     // Obtener la posición x y y
     x = msg->pose.pose.position.x;
     y = msg->pose.pose.position.y;
@@ -27,9 +30,10 @@ void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     // Obtener el ángulo en grados y mostrarlo
     ang = yaw * 180.0 / M_PI;
 
-    std::cout << "x: " << x << std::endl;
-    std::cout << "y: " << y << std::endl;
-    std::cout << "Angulo: " << ang << std::endl;
+    std::cout << "\tx: " << x << std::endl;
+    std::cout << "\ty: " << y << std::endl;
+    std::cout << "\tAngulo: " << ang << std::endl;
+
 
 
 }
@@ -39,20 +43,21 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   auto node = rclcpp::Node::make_shared("square_odom");
 
-  auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
-  node->declare_parameter("linear_speed", 0.1);
-  node->declare_parameter("angular_speed", 0.2);
-  node->declare_parameter("square_length", 2.0);
-  auto subscriber = node->create_subscription<nav_msgs::msg::Odometry>("/odom", 10, odom_callback);
-  
-  rclcpp::spin_some(node);
+  // Declaramos subscription
+  auto subscription = node->create_subscription<nav_msgs::msg::Odometry>("odom", 10, topic_callback);
 
-  
+  // Declaramos publisher
+  auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+  geometry_msgs::msg::Twist message;
+  rclcpp::WallRate loop_rate(10ms);
+  node->declare_parameter("linear_speed", 0.2);
+  node->declare_parameter("angular_speed", 0.2);
+  node->declare_parameter("square_length", 0.5);
   double linear_speed = node->get_parameter("linear_speed").get_parameter_value().get<double>();
   double angular_speed = node->get_parameter("angular_speed").get_parameter_value().get<double>();
   double square_length = node->get_parameter("square_length").get_parameter_value().get<double>();
-  // Esperar a que el nodo obtenga la primera posición y orientación
-  rclcpp::spin_some(node);
+
+  const nav_msgs::msg::Odometry::SharedPtr msg;
 
   for (int i = 0; i < 4; i++) {
     // Guardar la posición y orientación inicial
@@ -75,6 +80,8 @@ int main(int argc, char * argv[])
         twist.linear.x = linear_speed;  // Velocidad lineal de 0.1 m/s
         twist.angular.z = 0.0; // Velocidad angular de 0 rad/s
         publisher->publish(twist);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
 
     }
 
@@ -91,12 +98,16 @@ int main(int argc, char * argv[])
         twist.linear.x = 0.0;    // Velocidad lineal nula
         twist.angular.z = angular_speed;   // Velocidad angular de 0.2 rad/s
         publisher->publish(twist);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
     }
   }
   geometry_msgs::msg::Twist twist;
-        twist.linear.x = 0.0;    // Velocidad lineal nula
-        twist.angular.z = 0.0;   // Velocidad angular nula
-        publisher->publish(twist);
+  twist.linear.x = 0.0;    // Velocidad lineal nula
+  twist.angular.z = 0.0;   // Velocidad angular nula
+  publisher->publish(twist);
+  rclcpp::spin_some(node);
+  loop_rate.sleep();
   rclcpp::shutdown();
   return 0;
 }

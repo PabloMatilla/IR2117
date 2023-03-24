@@ -1,0 +1,16 @@
+[0.040s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4
+[0.154s] [35m[1mScanning dependencies of target square_odom[0m
+[0.201s] [ 50%] Built target wandering
+[0.239s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[3.476s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.476s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:43:86:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom_callback[m[K’?
+[3.476s]    43 |   auto subscription = node->create_subscription<nav_msgs::msg::Odometry>("odom", 10, [01;31m[Ktopic_callback[m[K);
+[3.476s]       |                                                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.476s]       |                                                                                      [32m[Kodom_callback[m[K
+[3.486s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:48:30:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[3.486s]    48 |   rclcpp::WallRate loop_rate([01;31m[K10ms[m[K);
+[3.486s]       |                              [01;31m[K^~~~[m[K
+[5.334s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[5.335s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/square_odom.dir/all] Error 2
+[5.336s] make: *** [Makefile:141: all] Error 2
+[5.339s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4

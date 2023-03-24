@@ -19,6 +19,8 @@ std_msgs/msg/string.hpp
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/std_msgs/msg/string.hpp
 cmath
 -
+unistd.h
+-
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

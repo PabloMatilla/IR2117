@@ -6,12 +6,15 @@
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "std_msgs/msg/string.hpp"
 #include <cmath>
+#include <unistd.h>
 
 
 using namespace std::chrono_literals;
 
+double minizq = 1000;
+double minder = 1000;
+
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
-    int minizq = 1000, minder = 1000;
     for (int i = 0; i < 10; i++) {
         if (msg -> ranges[i] < minizq) {
           minizq = msg -> ranges[i];
@@ -38,10 +41,29 @@ int main(int argc, char * argv[])
   rclcpp::WallRate loop_rate(10ms);
   
   while (rclcpp::ok()){
-    message.linear.x = 0;
+    message.linear.x = 0.3;
     message.angular.z = 0;
     publisher->publish(message);
     rclcpp::spin_some(node);
+    bool turn = true;
+
+    while (rclcpp::ok() and minizq < 1) {
+      message.linear.x = 0;
+      message.angular.z = 0.2;
+      publisher->publish(message);
+      rclcpp::spin_some(node);
+      //sleep(5);
+    }
+    /*^
+    while (rclcpp::ok() and minder < 1) {
+      message.linear.x = 0.0;
+      message.angular.z = -0.2;
+      publisher->publish(message);
+      rclcpp::spin_some(node);
+    }
+    */
+
+
   }
   
   rclcpp::shutdown();

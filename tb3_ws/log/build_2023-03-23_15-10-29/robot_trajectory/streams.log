@@ -1,0 +1,14 @@
+[0.051s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4
+[0.162s] [35m[1mScanning dependencies of target wandering[0m
+[0.235s] [ 25%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[3.808s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.809s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:47:17:[m[K [01;31m[Kerror: [m[K‘[01m[KTrue[m[K’ was not declared in this scope
+[3.809s]    47 |     bool turn = [01;31m[KTrue[m[K;
+[3.809s]       |                 [01;31m[K^~~~[m[K
+[3.809s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:47:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kturn[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[3.810s]    47 |     bool [01;35m[Kturn[m[K = True;
+[3.810s]       |          [01;35m[K^~~~[m[K
+[7.470s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[7.471s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[7.471s] make: *** [Makefile:141: all] Error 2
+[7.474s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4
