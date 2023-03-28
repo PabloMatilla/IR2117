@@ -1,0 +1,46 @@
+[0.026s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.081s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.272s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.297s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.299s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.388s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.421s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.422s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.522s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.546s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.597s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[0.603s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[0.902s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.955s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.052s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.088s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.088s] -- Configured cppcheck include dirs: 
+[1.088s] -- Configured cppcheck exclude dirs and/or files: 
+[1.121s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.121s] -- Configured cpplint exclude dirs and/or files: 
+[1.126s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.135s] -- Added test 'lint_cmake' to check CMake code style
+[1.140s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.173s] -- Added test 'uncrustify' to check C / C++ code style
+[1.173s] -- Configured uncrustify additional arguments: 
+[1.178s] -- Added test 'xmllint' to check XML markup files
+[1.190s] -- Configuring done
+[1.290s] -- Generating done
+[1.302s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory
+[1.399s] [35m[1mScanning dependencies of target square_odom[0m
+[1.399s] [35m[1mScanning dependencies of target wandering[0m
+[1.512s] [ 50%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[1.512s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[2.627s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.627s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmininz[m[K’ was not declared in this scope; did you mean ‘[01m[Kminizq[m[K’?
+[2.627s]    32 |       min = [01;31m[Kmininz[m[K;
+[2.627s]       |             [01;31m[K^~~~~~[m[K
+[2.627s]       |             [32m[Kminizq[m[K
+[3.974s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[3.974s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[3.974s] make[1]: *** Se espera a que terminen otras tareas....
+[23.973s] make[2]: *** Se borra el archivo 'CMakeFiles/square_odom.dir/src/square_odom.cpp.o'
+[23.974s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Interrupción
+[23.974s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/square_odom.dir/all] Interrupción
+[23.975s] make: *** [Makefile:141: all] Interrupción

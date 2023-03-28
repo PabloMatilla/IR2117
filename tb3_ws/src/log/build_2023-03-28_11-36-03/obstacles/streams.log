@@ -1,0 +1,56 @@
+[0.024s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles
+[0.403s] -- The C compiler identification is GNU 9.4.0
+[0.762s] -- The CXX compiler identification is GNU 9.4.0
+[0.778s] -- Check for working C compiler: /usr/bin/cc
+[1.120s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.127s] -- Detecting C compiler ABI info
+[1.452s] -- Detecting C compiler ABI info - done
+[1.478s] -- Detecting C compile features
+[1.479s] -- Detecting C compile features - done
+[1.487s] -- Check for working CXX compiler: /usr/bin/c++
+[1.776s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.785s] -- Detecting CXX compiler ABI info
+[2.041s] -- Detecting CXX compiler ABI info - done
+[2.083s] -- Detecting CXX compile features
+[2.084s] -- Detecting CXX compile features - done
+[2.098s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.135s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.135s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.368s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.418s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.426s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.503s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.531s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.605s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.657s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.659s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.670s] -- Looking for pthread.h
+[2.922s] -- Looking for pthread.h - found
+[2.931s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.255s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.256s] -- Looking for pthread_create in pthreads
+[3.396s] -- Looking for pthread_create in pthreads - not found
+[3.402s] -- Looking for pthread_create in pthread
+[3.719s] -- Looking for pthread_create in pthread - found
+[3.729s] -- Found Threads: TRUE  
+[3.856s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.957s] CMake Error at CMakeLists.txt:22 (find_package):
+[3.958s]   By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this
+[3.958s]   project has asked CMake to find a package configuration file provided by
+[3.958s]   "example_interfaces", but CMake did not find one.
+[3.958s] 
+[3.958s]   Could not find a package configuration file provided by
+[3.958s]   "example_interfaces" with any of the following names:
+[3.958s] 
+[3.958s]     example_interfacesConfig.cmake
+[3.958s]     example_interfaces-config.cmake
+[3.958s] 
+[3.958s]   Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or
+[3.958s]   set "example_interfaces_DIR" to a directory containing one of the above
+[3.958s]   files.  If "example_interfaces" provides a separate development package or
+[3.958s]   SDK, be sure it has been installed.
+[3.959s] 
+[3.959s] 
+[3.959s] -- Configuring incomplete, errors occurred!
+[3.959s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles/CMakeFiles/CMakeOutput.log".
+[3.959s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles/CMakeFiles/CMakeError.log".

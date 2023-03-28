@@ -1,0 +1,9 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmininz[m[K’ was not declared in this scope; did you mean ‘[01m[Kminizq[m[K’?
+   32 |       min = [01;31m[Kmininz[m[K;
+      |             [01;31m[K^~~~~~[m[K
+      |             [32m[Kminizq[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+make[1]: *** Se espera a que terminen otras tareas....
+make: *** [Makefile:141: all] Error 2

@@ -29,7 +29,7 @@ void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
         }
     }
     if (minizq < minder) {
-      min = mininz;
+      min = minizq;
     } else {
       min = minder;
     }
