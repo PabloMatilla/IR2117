@@ -1,0 +1,17 @@
+[0.039s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
+[0.133s] [35m[1mScanning dependencies of target wandering[0m
+[0.181s] [ 50%] Built target square_odom
+[0.201s] [ 75%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[2.644s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.645s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:60:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kminider[m[K’ was not declared in this scope; did you mean ‘[01m[Kminder[m[K’?
+[2.645s]    60 |     while (rclcpp::ok() and (minizq < 1 or [01;31m[Kminider[m[K < 1) {
+[2.645s]       |                                            [01;31m[K^~~~~~~[m[K
+[2.645s]       |                                            [32m[Kminder[m[K
+[2.645s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:60:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+[2.645s]    60 |     while [34m[K([m[Krclcpp::ok() and (minizq < 1 or minider < 1)[01;31m[K [m[K[32m[K{[m[K
+[2.645s]       |           [34m[K~[m[K                                            [01;31m[K^[m[K[32m[K~[m[K
+[2.646s]       |                                                        [32m[K)[m[K
+[5.346s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[5.346s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[5.347s] make: *** [Makefile:141: all] Error 2
+[5.350s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j4 -l4
