@@ -10,6 +10,10 @@ CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/builtin_interf
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/bool.hpp
+CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__builder.hpp
+CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__struct.hpp
+CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__traits.hpp
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
 CMakeFiles/detector.dir/src/detector.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp
