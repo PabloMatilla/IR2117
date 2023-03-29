@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000383] (obstacles) JobQueued: {'identifier': 'obstacles', 'dependencies': OrderedDict()}
+[0.001666] (obstacles) JobStarted: {'identifier': 'obstacles'}
+[0.031267] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'cmake'}
+[0.032011] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles', '-DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pablo'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1529'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pablo'), ('OLDPWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pablo'), ('JOURNAL_STREAM', '8:44387'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pablo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pablo-Lenovo-ideapad-110-15ISK:@/tmp/.ICE-unix/1565,unix/pablo-Lenovo-ideapad-110-15ISK:/tmp/.ICE-unix/1565'), ('INVOCATION_ID', 'c41cc3f751f0433cb1baeaff17234046'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc682aa9_d9ad_4e12_a6df_5e4e0f6d8c82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', ''), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/home/usuario/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy')]), 'shell': False}
+[0.099681] (-) TimerEvent: {}
+[0.200397] (-) TimerEvent: {}
+[0.301016] (-) TimerEvent: {}
+[0.401943] (-) TimerEvent: {}
+[0.502695] (-) TimerEvent: {}
+[0.603840] (-) TimerEvent: {}
+[0.704736] (-) TimerEvent: {}
+[0.805365] (-) TimerEvent: {}
+[0.906178] (-) TimerEvent: {}
+[1.006908] (-) TimerEvent: {}
+[1.074311] (obstacles) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.107094] (-) TimerEvent: {}
+[1.207745] (-) TimerEvent: {}
+[1.292705] (obstacles) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.303575] (obstacles) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.307865] (-) TimerEvent: {}
+[1.408485] (-) TimerEvent: {}
+[1.445366] (obstacles) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.448103] (obstacles) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.508717] (-) TimerEvent: {}
+[1.585287] (obstacles) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.608843] (-) TimerEvent: {}
+[1.609685] (obstacles) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.618686] (obstacles) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.623697] (obstacles) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.709026] (-) TimerEvent: {}
+[1.789279] (obstacles) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.792184] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.809162] (-) TimerEvent: {}
+[1.909606] (-) TimerEvent: {}
+[1.957354] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.988986] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.990287] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.994597] (obstacles) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.009736] (-) TimerEvent: {}
+[2.045880] (obstacles) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.046248] (obstacles) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.109865] (-) TimerEvent: {}
+[2.210165] (-) TimerEvent: {}
+[2.310545] (-) TimerEvent: {}
+[2.411202] (-) TimerEvent: {}
+[2.511571] (-) TimerEvent: {}
+[2.530221] (obstacles) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.611657] (-) TimerEvent: {}
+[2.635092] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.673438] (obstacles) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.711779] (-) TimerEvent: {}
+[2.812252] (-) TimerEvent: {}
+[2.912881] (-) TimerEvent: {}
+[3.013548] (-) TimerEvent: {}
+[3.101416] (obstacles) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[3.113696] (-) TimerEvent: {}
+[3.167917] (obstacles) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[3.213815] (-) TimerEvent: {}
+[3.314220] (-) TimerEvent: {}
+[3.339324] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.414320] (-) TimerEvent: {}
+[3.469023] (obstacles) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.472971] (obstacles) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.478687] (obstacles) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.514462] (-) TimerEvent: {}
+[3.614878] (-) TimerEvent: {}
+[3.671297] (obstacles) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.671874] (obstacles) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.715039] (-) TimerEvent: {}
+[3.815423] (-) TimerEvent: {}
+[3.837264] (obstacles) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.837814] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.915598] (-) TimerEvent: {}
+[3.999636] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.999899] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.015692] (-) TimerEvent: {}
+[4.116590] (-) TimerEvent: {}
+[4.140773] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.143912] (obstacles) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.216656] (-) TimerEvent: {}
+[4.317048] (-) TimerEvent: {}
+[4.417381] (-) TimerEvent: {}
+[4.490052] (obstacles) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[4.517509] (-) TimerEvent: {}
+[4.617900] (-) TimerEvent: {}
+[4.718268] (-) TimerEvent: {}
+[4.763670] (obstacles) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)\n'}
+[4.818418] (-) TimerEvent: {}
+[4.918803] (-) TimerEvent: {}
+[5.019226] (-) TimerEvent: {}
+[5.025070] (obstacles) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.119324] (-) TimerEvent: {}
+[5.181348] (obstacles) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.192739] (obstacles) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.193189] (obstacles) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.193373] (obstacles) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.203558] (obstacles) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.203965] (obstacles) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.206529] (obstacles) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.210225] (obstacles) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.212171] (obstacles) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.219458] (-) TimerEvent: {}
+[5.223073] (obstacles) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.223327] (obstacles) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.225589] (obstacles) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.232900] (obstacles) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.257556] (obstacles) StdoutLine: {'line': b'-- Generating done\n'}
+[5.261710] (obstacles) StdoutLine: {'line': b'-- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles\n'}
+[5.277473] (obstacles) CommandEnded: {'returncode': 0}
+[5.278654] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'build'}
+[5.282325] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', '--', '-j4', '-l4'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pablo'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1529'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pablo'), ('OLDPWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pablo'), ('JOURNAL_STREAM', '8:44387'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pablo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pablo-Lenovo-ideapad-110-15ISK:@/tmp/.ICE-unix/1565,unix/pablo-Lenovo-ideapad-110-15ISK:/tmp/.ICE-unix/1565'), ('INVOCATION_ID', 'c41cc3f751f0433cb1baeaff17234046'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc682aa9_d9ad_4e12_a6df_5e4e0f6d8c82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', ''), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/home/usuario/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy')]), 'shell': False}
+[5.319606] (-) TimerEvent: {}
+[5.365759] (obstacles) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector\x1b[0m\n'}
+[5.419716] (-) TimerEvent: {}
+[5.461033] (obstacles) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o\x1b[0m\n'}
+[5.519852] (-) TimerEvent: {}
+[5.620219] (-) TimerEvent: {}
+[5.720592] (-) TimerEvent: {}
+[5.820971] (-) TimerEvent: {}
+[5.921451] (-) TimerEvent: {}
+[6.021995] (-) TimerEvent: {}
+[6.122591] (-) TimerEvent: {}
+[6.223062] (-) TimerEvent: {}
+[6.323398] (-) TimerEvent: {}
+[6.423764] (-) TimerEvent: {}
+[6.524358] (-) TimerEvent: {}
+[6.624779] (-) TimerEvent: {}
+[6.725195] (-) TimerEvent: {}
+[6.825593] (-) TimerEvent: {}
+[6.925932] (-) TimerEvent: {}
+[7.026355] (-) TimerEvent: {}
+[7.126689] (-) TimerEvent: {}
+[7.227008] (-) TimerEvent: {}
+[7.327339] (-) TimerEvent: {}
+[7.427714] (-) TimerEvent: {}
+[7.532212] (-) TimerEvent: {}
+[7.632585] (-) TimerEvent: {}
+[7.732920] (-) TimerEvent: {}
+[7.833345] (-) TimerEvent: {}
+[7.934177] (-) TimerEvent: {}
+[8.034556] (-) TimerEvent: {}
+[8.134945] (-) TimerEvent: {}
+[8.235437] (-) TimerEvent: {}
+[8.263015] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.263383] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:9:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[8.263602] (obstacles) StderrLine: {'line': b'    9 | void callback(\x1b[01;35m\x1b[Kconst sensor_msgs::msg::LaserScan::SharedPtr msg\x1b[m\x1b[K)\n'}
+[8.263800] (obstacles) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[8.299951] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.300304] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:25:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_angle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.300506] (obstacles) StderrLine: {'line': b'   25 |   double \x1b[01;35m\x1b[Kobs_angle_min\x1b[m\x1b[K = node->get_parameter("obs_angle_min").get_parameter_value().get<double>();\n'}
+[8.300687] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.300870] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:26:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_angle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.301045] (obstacles) StderrLine: {'line': b'   26 |   double \x1b[01;35m\x1b[Kobs_angle_max\x1b[m\x1b[K = node->get_parameter("obs_angle_max").get_parameter_value().get<double>();\n'}
+[8.301215] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.301388] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:27:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[8.301560] (obstacles) StderrLine: {'line': b'   27 |   double \x1b[01;35m\x1b[Kobs_threshold\x1b[m\x1b[K = node->get_parameter("obs_threshold").get_parameter_value().get<double>();\n'}
+[8.301726] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.335545] (-) TimerEvent: {}
+[8.435923] (-) TimerEvent: {}
+[8.536389] (-) TimerEvent: {}
+[8.636752] (-) TimerEvent: {}
+[8.737079] (-) TimerEvent: {}
+[8.837425] (-) TimerEvent: {}
+[8.937840] (-) TimerEvent: {}
+[9.038588] (-) TimerEvent: {}
+[9.139437] (-) TimerEvent: {}
+[9.239856] (-) TimerEvent: {}
+[9.340451] (-) TimerEvent: {}
+[9.440797] (-) TimerEvent: {}
+[9.541133] (-) TimerEvent: {}
+[9.641552] (-) TimerEvent: {}
+[9.741980] (-) TimerEvent: {}
+[9.842423] (-) TimerEvent: {}
+[9.943227] (-) TimerEvent: {}
+[10.043617] (-) TimerEvent: {}
+[10.144019] (-) TimerEvent: {}
+[10.244522] (-) TimerEvent: {}
+[10.344923] (-) TimerEvent: {}
+[10.445292] (-) TimerEvent: {}
+[10.545711] (-) TimerEvent: {}
+[10.646042] (-) TimerEvent: {}
+[10.746790] (-) TimerEvent: {}
+[10.847174] (-) TimerEvent: {}
+[10.947559] (-) TimerEvent: {}
+[11.047945] (-) TimerEvent: {}
+[11.148404] (-) TimerEvent: {}
+[11.249278] (-) TimerEvent: {}
+[11.349843] (-) TimerEvent: {}
+[11.450173] (-) TimerEvent: {}
+[11.550654] (-) TimerEvent: {}
+[11.651085] (-) TimerEvent: {}
+[11.751755] (-) TimerEvent: {}
+[11.852196] (-) TimerEvent: {}
+[11.952642] (-) TimerEvent: {}
+[12.053109] (-) TimerEvent: {}
+[12.153860] (-) TimerEvent: {}
+[12.254178] (-) TimerEvent: {}
+[12.354545] (-) TimerEvent: {}
+[12.454889] (-) TimerEvent: {}
+[12.555271] (-) TimerEvent: {}
+[12.655620] (-) TimerEvent: {}
+[12.755986] (-) TimerEvent: {}
+[12.856320] (-) TimerEvent: {}
+[12.956706] (-) TimerEvent: {}
+[13.057005] (-) TimerEvent: {}
+[13.157323] (-) TimerEvent: {}
+[13.257669] (-) TimerEvent: {}
+[13.357996] (-) TimerEvent: {}
+[13.458325] (-) TimerEvent: {}
+[13.558685] (-) TimerEvent: {}
+[13.659090] (-) TimerEvent: {}
+[13.759476] (-) TimerEvent: {}
+[13.859902] (-) TimerEvent: {}
+[13.960734] (-) TimerEvent: {}
+[14.061199] (-) TimerEvent: {}
+[14.161745] (-) TimerEvent: {}
+[14.262058] (-) TimerEvent: {}
+[14.362350] (-) TimerEvent: {}
+[14.462717] (-) TimerEvent: {}
+[14.563080] (-) TimerEvent: {}
+[14.663423] (-) TimerEvent: {}
+[14.763751] (-) TimerEvent: {}
+[14.864159] (-) TimerEvent: {}
+[14.964556] (-) TimerEvent: {}
+[15.064855] (-) TimerEvent: {}
+[15.165664] (-) TimerEvent: {}
+[15.266032] (-) TimerEvent: {}
+[15.366351] (-) TimerEvent: {}
+[15.466688] (-) TimerEvent: {}
+[15.567041] (-) TimerEvent: {}
+[15.667437] (-) TimerEvent: {}
+[15.767979] (-) TimerEvent: {}
+[15.868702] (-) TimerEvent: {}
+[15.969116] (-) TimerEvent: {}
+[16.069619] (-) TimerEvent: {}
+[16.170033] (-) TimerEvent: {}
+[16.270533] (-) TimerEvent: {}
+[16.370972] (-) TimerEvent: {}
+[16.409218] (obstacles) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable detector\x1b[0m\n'}
+[16.471169] (-) TimerEvent: {}
+[16.571899] (-) TimerEvent: {}
+[16.672202] (-) TimerEvent: {}
+[16.772635] (-) TimerEvent: {}
+[16.873079] (-) TimerEvent: {}
+[16.973438] (-) TimerEvent: {}
+[17.068613] (obstacles) StdoutLine: {'line': b'[100%] Built target detector\n'}
+[17.073557] (-) TimerEvent: {}
+[17.090167] (obstacles) CommandEnded: {'returncode': 0}
+[17.138677] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'install'}
+[17.161311] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pablo'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1529'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pablo'), ('OLDPWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pablo'), ('JOURNAL_STREAM', '8:44387'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pablo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pablo-Lenovo-ideapad-110-15ISK:@/tmp/.ICE-unix/1565,unix/pablo-Lenovo-ideapad-110-15ISK:/tmp/.ICE-unix/1565'), ('INVOCATION_ID', 'c41cc3f751f0433cb1baeaff17234046'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc682aa9_d9ad_4e12_a6df_5e4e0f6d8c82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', ''), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/home/usuario/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy')]), 'shell': False}
+[17.173716] (-) TimerEvent: {}
+[17.178857] (obstacles) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.179170] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/obstacles/detector\n'}
+[17.186138] (obstacles) StdoutLine: {'line': b'-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/obstacles/detector" to ""\n'}
+[17.186493] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/launch\n'}
+[17.186675] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/launch/detector_test.launch.py\n'}
+[17.186871] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles\n'}
+[17.187296] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles\n'}
+[17.187652] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.sh\n'}
+[17.187915] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv\n'}
+[17.188229] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/path.sh\n'}
+[17.188524] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/path.dsv\n'}
+[17.188825] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.bash\n'}
+[17.189094] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.sh\n'}
+[17.189395] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.zsh\n'}
+[17.189740] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.dsv\n'}
+[17.190017] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.dsv\n'}
+[17.190373] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/packages/obstacles\n'}
+[17.190783] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake\n'}
+[17.191095] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake\n'}
+[17.191394] (obstacles) StdoutLine: {'line': b'-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.xml\n'}
+[17.194185] (obstacles) CommandEnded: {'returncode': 0}
+[17.273895] (-) TimerEvent: {}
+[17.300595] (obstacles) JobEnded: {'identifier': 'obstacles', 'rc': 0}
+[17.302567] (-) EventReactorShutdown: {}

@@ -1,0 +1,106 @@
+[0.682s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.682s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fdfc1c11d30>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fdfc1c11d30>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fdfc1b9b2e0>)
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.741s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles'
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.741s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.742s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.790s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'obstacles'
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.834s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install
+[0.838s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/foxy
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_args' from command line to 'None'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_target' from command line to 'None'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_clean_cache' from command line to 'False'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_clean_first' from command line to 'False'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'cmake_force_configure' from command line to 'False'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'ament_cmake_args' from command line to 'None'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'catkin_cmake_args' from command line to 'None'
+[1.026s] Level 5:colcon.colcon_core.verb:set package 'obstacles' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.026s] DEBUG:colcon.colcon_core.verb:Building package 'obstacles' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles', 'merge_install': False, 'path': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles', 'symlink_install': False, 'test_result_base': None}
+[1.028s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.037s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles' with build type 'ament_cmake'
+[1.037s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles'
+[1.049s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.050s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.050s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles
+[6.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles
+[6.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles -- -j4 -l4
+[18.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles -- -j4 -l4
+[18.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles
+[18.229s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(obstacles)
+[18.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles
+[18.241s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles' for CMake module files
+[18.242s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles' for CMake config files
+[18.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('obstacles', 'cmake_prefix_path')
+[18.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.ps1'
+[18.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.dsv'
+[18.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.sh'
+[18.251s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib'
+[18.252s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/bin'
+[18.252s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/pkgconfig/obstacles.pc'
+[18.253s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/python3.8/site-packages'
+[18.253s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/bin'
+[18.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.ps1'
+[18.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.dsv'
+[18.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.sh'
+[18.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.bash'
+[18.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.zsh'
+[18.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/colcon-core/packages/obstacles)
+[18.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(obstacles)
+[18.318s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles' for CMake module files
+[18.319s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles' for CMake config files
+[18.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('obstacles', 'cmake_prefix_path')
+[18.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.ps1'
+[18.323s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.dsv'
+[18.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/hook/cmake_prefix_path.sh'
+[18.325s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib'
+[18.325s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/bin'
+[18.325s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/pkgconfig/obstacles.pc'
+[18.326s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/python3.8/site-packages'
+[18.326s] Level 1:colcon.colcon_core.environment:checking '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/bin'
+[18.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.ps1'
+[18.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.dsv'
+[18.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.sh'
+[18.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.bash'
+[18.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.zsh'
+[18.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/colcon-core/packages/obstacles)
+[18.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.336s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.337s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.337s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.350s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.380s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.384s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/local_setup.ps1'
+[18.386s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/_local_setup_util_ps1.py'
+[18.389s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/setup.ps1'
+[18.395s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/local_setup.sh'
+[18.396s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/_local_setup_util_sh.py'
+[18.397s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/setup.sh'
+[18.399s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/local_setup.bash'
+[18.400s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/setup.bash'
+[18.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/local_setup.zsh'
+[18.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/setup.zsh'
