@@ -1,0 +1,35 @@
+[0.040s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles -- -j4 -l4
+[0.141s] [35m[1mScanning dependencies of target detector[0m
+[0.211s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[3.138s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kvoid callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:18:7:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+[3.139s]    18 |       [01;35m[Kif[m[K (range <= obs_threshold)
+[3.139s]       |       [01;35m[K^~[m[K
+[3.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:20:9:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[3.140s]    20 |         [01;36m[Kbreak[m[K;
+[3.140s]       |         [01;36m[K^~~~~[m[K
+[11.535s] [100%] [32m[1mLinking CXX executable detector[0m
+[12.197s] [100%] Built target detector
+[12.228s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles -- -j4 -l4
+[12.304s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles
+[12.320s] -- Install configuration: ""
+[12.320s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/obstacles/detector
+[12.326s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/lib/obstacles/detector" to ""
+[12.327s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/launch
+[12.327s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/launch/detector_test.launch.py
+[12.327s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+[12.327s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+[12.328s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+[12.328s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+[12.328s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/path.sh
+[12.328s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/environment/path.dsv
+[12.329s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.bash
+[12.329s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.sh
+[12.329s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.zsh
+[12.329s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/local_setup.dsv
+[12.329s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.dsv
+[12.329s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/ament_index/resource_index/packages/obstacles
+[12.330s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+[12.330s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+[12.330s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles/share/obstacles/package.xml
+[12.333s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles

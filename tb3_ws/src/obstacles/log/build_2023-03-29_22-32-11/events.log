@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.000488] (obstacles) JobQueued: {'identifier': 'obstacles', 'dependencies': OrderedDict()}
+[0.000949] (obstacles) JobStarted: {'identifier': 'obstacles'}
+[0.035507] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'cmake'}
+[0.037405] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'build'}
+[0.039605] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', '--', '-j4', '-l4'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pablo'), ('LC_TIME', 'es_ES.UTF-8'), ('SSH_AGENT_PID', '1529'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pablo'), ('OLDPWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pablo'), ('JOURNAL_STREAM', '8:44387'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pablo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pablo-Lenovo-ideapad-110-15ISK:@/tmp/.ICE-unix/1565,unix/pablo-Lenovo-ideapad-110-15ISK:/tmp/.ICE-unix/1565'), ('INVOCATION_ID', 'c41cc3f751f0433cb1baeaff17234046'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc682aa9_d9ad_4e12_a6df_5e4e0f6d8c82'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.87'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', ''), ('AMENT_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('WEBOTS_HOME', '/home/usuario/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy')]), 'shell': False}
+[0.099692] (-) TimerEvent: {}
+[0.138268] (obstacles) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector\x1b[0m\n'}
+[0.196917] (obstacles) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o\x1b[0m\n'}
+[0.199720] (-) TimerEvent: {}
+[0.300170] (-) TimerEvent: {}
+[0.400704] (-) TimerEvent: {}
+[0.501137] (-) TimerEvent: {}
+[0.601521] (-) TimerEvent: {}
+[0.701885] (-) TimerEvent: {}
+[0.802335] (-) TimerEvent: {}
+[0.902732] (-) TimerEvent: {}
+[1.003189] (-) TimerEvent: {}
+[1.103862] (-) TimerEvent: {}
+[1.204301] (-) TimerEvent: {}
+[1.304793] (-) TimerEvent: {}
+[1.405185] (-) TimerEvent: {}
+[1.505574] (-) TimerEvent: {}
+[1.606045] (-) TimerEvent: {}
+[1.706565] (-) TimerEvent: {}
+[1.806919] (-) TimerEvent: {}
+[1.907294] (-) TimerEvent: {}
+[2.007815] (-) TimerEvent: {}
+[2.108377] (-) TimerEvent: {}
+[2.208885] (-) TimerEvent: {}
+[2.309436] (-) TimerEvent: {}
+[2.409871] (-) TimerEvent: {}
+[2.510213] (-) TimerEvent: {}
+[2.610567] (-) TimerEvent: {}
+[2.711079] (-) TimerEvent: {}
+[2.811375] (-) TimerEvent: {}
+[2.889421] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.889737] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:15:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobs_angle_min\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.889910] (obstacles) StderrLine: {'line': b'   15 |     if ((angle >= \x1b[01;31m\x1b[Kobs_angle_min\x1b[m\x1b[K) and (angle <= obs_angle_max)) {\n'}
+[2.890070] (obstacles) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.893028] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:15:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobs_angle_max\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.893353] (obstacles) StderrLine: {'line': b'   15 |     if ((angle >= obs_angle_min) and (angle <= \x1b[01;31m\x1b[Kobs_angle_max\x1b[m\x1b[K)) {\n'}
+[2.893551] (obstacles) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.896778] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:16:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobs_threshold\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.897075] (obstacles) StderrLine: {'line': b'   16 |       if (range <= \x1b[01;31m\x1b[Kobs_threshold\x1b[m\x1b[K)\n'}
+[2.897237] (obstacles) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.903874] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:21:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Publisher<example_interfaces::msg::Bool_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Publisher<example_interfaces::msg::Bool_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublisher\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KPublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.904230] (obstacles) StderrLine: {'line': b'   21 |   publisher -> \x1b[01;31m\x1b[Kpublisher\x1b[m\x1b[K(out_msg);\n'}
+[2.904471] (obstacles) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.904727] (obstacles) StderrLine: {'line': b'      |                \x1b[32m\x1b[KPublisher\x1b[m\x1b[K\n'}
+[2.911557] (-) TimerEvent: {}
+[2.934673] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.935114] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:33:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_angle_min\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.935316] (obstacles) StderrLine: {'line': b'   33 |   double \x1b[01;35m\x1b[Kobs_angle_min\x1b[m\x1b[K = node->get_parameter("obs_angle_min").get_parameter_value().get<double>();\n'}
+[2.935511] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.935689] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:34:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_angle_max\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.935868] (obstacles) StderrLine: {'line': b'   34 |   double \x1b[01;35m\x1b[Kobs_angle_max\x1b[m\x1b[K = node->get_parameter("obs_angle_max").get_parameter_value().get<double>();\n'}
+[2.936040] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.936203] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:35:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobs_threshold\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.936378] (obstacles) StderrLine: {'line': b'   35 |   double \x1b[01;35m\x1b[Kobs_threshold\x1b[m\x1b[K = node->get_parameter("obs_threshold").get_parameter_value().get<double>();\n'}
+[2.936531] (obstacles) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.011667] (-) TimerEvent: {}
+[3.112024] (-) TimerEvent: {}
+[3.212367] (-) TimerEvent: {}
+[3.312755] (-) TimerEvent: {}
+[3.413089] (-) TimerEvent: {}
+[3.513381] (-) TimerEvent: {}
+[3.613739] (-) TimerEvent: {}
+[3.714179] (-) TimerEvent: {}
+[3.814526] (-) TimerEvent: {}
+[3.914833] (-) TimerEvent: {}
+[4.015166] (-) TimerEvent: {}
+[4.115473] (-) TimerEvent: {}
+[4.215817] (-) TimerEvent: {}
+[4.316148] (-) TimerEvent: {}
+[4.416690] (-) TimerEvent: {}
+[4.517109] (-) TimerEvent: {}
+[4.617643] (-) TimerEvent: {}
+[4.718075] (-) TimerEvent: {}
+[4.818498] (-) TimerEvent: {}
+[4.918942] (-) TimerEvent: {}
+[5.019447] (-) TimerEvent: {}
+[5.119846] (-) TimerEvent: {}
+[5.220226] (-) TimerEvent: {}
+[5.320705] (-) TimerEvent: {}
+[5.421227] (-) TimerEvent: {}
+[5.521599] (-) TimerEvent: {}
+[5.621987] (-) TimerEvent: {}
+[5.722366] (-) TimerEvent: {}
+[5.822756] (-) TimerEvent: {}
+[5.923129] (-) TimerEvent: {}
+[6.008338] (obstacles) StderrLine: {'line': b'make[2]: *** [CMakeFiles/detector.dir/build.make:63: CMakeFiles/detector.dir/src/detector.cpp.o] Error 1\n'}
+[6.008887] (obstacles) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/detector.dir/all] Error 2\n'}
+[6.009840] (obstacles) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[6.014000] (obstacles) CommandEnded: {'returncode': 2}
+[6.023381] (-) TimerEvent: {}
+[6.106347] (obstacles) JobEnded: {'identifier': 'obstacles', 'rc': 2}
+[6.117254] (-) EventReactorShutdown: {}
