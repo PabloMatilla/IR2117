@@ -1,0 +1,73 @@
+[0.024s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
+[0.058s] [35m[1mScanning dependencies of target avoidance[0m
+[0.074s] [ 50%] Built target detector
+[0.078s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.987s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:8:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ does not name a type; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[0.987s]     8 | void callback_front(const [01;31m[Kexample_interfaces[m[K::msg::Bool::SharedPtr msg) {
+[0.987s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.987s]       |                           [32m[Krcl_interfaces[m[K
+[0.987s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:8:50:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[0.987s]     8 | void callback_front(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.987s]       |                                                  [01;31m[K^~[m[K
+[0.987s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:8:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[0.987s]     8 | void callback_front[34m[K([m[Kconst example_interfaces::msg[01;31m[K:[m[K[32m[K:[m[KBool::SharedPtr msg) {
+[0.987s]       |                    [34m[K~[m[K                             [01;31m[K^[m[K[32m[K~[m[K
+[0.987s]       |                                                  [32m[K)[m[K
+[0.987s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:8:50:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[0.987s]     8 | void callback_front(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.988s]       |                                                  [01;31m[K^~[m[K
+[0.988s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:11:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ does not name a type; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[0.988s]    11 | void callback_left(const [01;31m[Kexample_interfaces[m[K::msg::Bool::SharedPtr msg) {
+[0.988s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.988s]       |                          [32m[Krcl_interfaces[m[K
+[0.988s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:11:49:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[0.988s]    11 | void callback_left(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.988s]       |                                                 [01;31m[K^~[m[K
+[0.988s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:11:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[0.988s]    11 | void callback_left[34m[K([m[Kconst example_interfaces::msg[01;31m[K:[m[K[32m[K:[m[KBool::SharedPtr msg) {
+[0.988s]       |                   [34m[K~[m[K                             [01;31m[K^[m[K[32m[K~[m[K
+[0.988s]       |                                                 [32m[K)[m[K
+[0.988s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:11:49:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[0.988s]    11 | void callback_left(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.988s]       |                                                 [01;31m[K^~[m[K
+[0.988s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:14:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ does not name a type; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[0.988s]    14 | void callback_right(const [01;31m[Kexample_interfaces[m[K::msg::Bool::SharedPtr msg) {
+[0.988s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.988s]       |                           [32m[Krcl_interfaces[m[K
+[0.989s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:14:50:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[0.989s]    14 | void callback_right(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.989s]       |                                                  [01;31m[K^~[m[K
+[0.989s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:14:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[0.989s]    14 | void callback_right[34m[K([m[Kconst example_interfaces::msg[01;31m[K:[m[K[32m[K:[m[KBool::SharedPtr msg) {
+[0.989s]       |                    [34m[K~[m[K                             [01;31m[K^[m[K[32m[K~[m[K
+[0.989s]       |                                                  [32m[K)[m[K
+[0.989s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:14:50:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[0.989s]    14 | void callback_right(const example_interfaces::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+[0.989s]       |                                                  [01;31m[K^~[m[K
+[0.993s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.993s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:22:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kexample_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[0.993s]    22 |   auto subs_front = node->create_subscription<[01;31m[Kexample_interfaces[m[K::msg::Bool>("/front/obstacle", 10, callback_front);
+[0.993s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.993s]       |                                               [32m[Krcl_interfaces[m[K
+[0.993s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:22:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[0.993s]    22 |   auto subs_front = node->[01;31m[Kcreate_subscription<example_interfaces::msg::Bool>[m[K("/front/obstacle", 10, callback_front);
+[0.993s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.994s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:22:101:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_front[m[K’ was not declared in this scope
+[0.994s]    22 |   auto subs_front = node->create_subscription<example_interfaces::msg::Bool>("/front/obstacle", 10, [01;31m[Kcallback_front[m[K);
+[0.994s]       |                                                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.994s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:23:26:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[0.994s]    23 |   auto subs_left = node->[01;31m[Kcreate_subscription<example_interfaces::msg::Bool>[m[K("/left/obstacle", 10, callback_left);
+[0.994s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.995s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:23:99:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_left[m[K’ was not declared in this scope
+[0.996s]    23 |   auto subs_left = node->create_subscription<example_interfaces::msg::Bool>("/left/obstacle", 10, [01;31m[Kcallback_left[m[K);
+[0.996s]       |                                                                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[0.996s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:24:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[0.996s]    24 |   auto subs_front = node->[01;31m[Kcreate_subscription<example_interfaces::msg::Bool>[m[K("/right/obstacle", 10, callback_right);
+[0.996s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.997s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:24:101:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback_right[m[K’ was not declared in this scope
+[0.997s]    24 |   auto subs_front = node->create_subscription<example_interfaces::msg::Bool>("/right/obstacle", 10, [01;31m[Kcallback_right[m[K);
+[0.997s]       |                                                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.712s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[1.712s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[1.713s] make: *** [Makefile:141: all] Error 2
+[1.716s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
