@@ -1,0 +1,92 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles
+[35m[1mScanning dependencies of target avoidance[0m
+[35m[1mScanning dependencies of target detector[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:9:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    9 | void callback_front([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:12:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   12 | void callback_left([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K) {
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:15:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   15 | void callback_right([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 75%] [32m[1mLinking CXX executable avoidance[0m
+[100%] [32m[1mLinking CXX executable detector[0m
+[100%] Built target avoidance
+[100%] Built target detector
+-- Install configuration: ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/detector
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/detector" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance" to ""
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/COLCON_IGNORE
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/.colcon_install_layout
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/local_setup.sh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/local_setup.zsh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/setup.ps1
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/_local_setup_util_ps1.py
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/local_setup.ps1
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/setup.sh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/setup.zsh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/setup.bash
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/_local_setup_util_sh.py
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/install/local_setup.bash
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/triple_detector.launch.py
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/detector_test.launch.py
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/build
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/build/COLCON_IGNORE
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/build/.built_by
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/COLCON_IGNORE
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/build_2023-03-30_12-40-14
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/build_2023-03-30_12-40-14/events.log
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/build_2023-03-30_12-40-14/logger_all.log
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/latest_build
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/log/latest
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.dsv
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.bash
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.sh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.zsh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.dsv
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/packages/obstacles
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.xml

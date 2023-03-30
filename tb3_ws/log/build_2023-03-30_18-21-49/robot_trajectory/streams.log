@@ -1,0 +1,15 @@
+[0.083s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4
+[0.167s] [35m[1mScanning dependencies of target wandering[0m
+[0.268s] [ 25%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.273s] [ 75%] Built target square_odom
+[2.922s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.922s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:51:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_left[m[K’ was not declared in this scope
+[2.922s]    51 |   if ([01;31m[Kturn_left[m[K < turn_right) {
+[2.923s]       |       [01;31m[K^~~~~~~~~[m[K
+[2.925s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:51:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_right[m[K’ was not declared in this scope
+[2.925s]    51 |   if (turn_left < [01;31m[Kturn_right[m[K) {
+[2.926s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[5.787s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[5.787s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+[5.788s] make: *** [Makefile:141: all] Error 2
+[5.791s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j4 -l4

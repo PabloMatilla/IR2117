@@ -1,0 +1,28 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:49:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kturn_left[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   49 |     bool [01;35m[Kturn_left[m[K = false, turn_right = false;
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:49:29:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kturn_right[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   49 |     bool turn_left = false, [01;35m[Kturn_right[m[K = false;
+      |                             [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:50:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   50 |     double [01;35m[Kvelocity[m[K;
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:58:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_left[m[K’ was not declared in this scope
+   58 |   if ([01;31m[Kturn_left[m[K < turn_right) {
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:58:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kturn_right[m[K’ was not declared in this scope
+   58 |   if (turn_left < [01;31m[Kturn_right[m[K) {
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity[m[K’ was not declared in this scope
+   59 |     [01;31m[Kvelocity[m[K =  0.2;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity[m[K’ was not declared in this scope
+   61 |     [01;31m[Kvelocity[m[K = -0.2;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:66:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity[m[K’ was not declared in this scope
+   66 |     message.angular.z = [01;31m[Kvelocity[m[K;
+      |                         [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
