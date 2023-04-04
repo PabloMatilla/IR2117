@@ -11,6 +11,10 @@ iostream
 -
 chrono
 -
+random
+-
+cstdio
+-
 rclcpp/rclcpp.hpp
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/rclcpp/rclcpp.hpp
 geometry_msgs/msg/twist.hpp
