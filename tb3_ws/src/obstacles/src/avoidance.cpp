@@ -34,6 +34,12 @@ int main(int argc, char * argv[])
   rclcpp::WallRate loop_rate(50ms);
   
   while (rclcpp::ok()) {
+      // Decision aleatoria en el caso de deteccion frontal
+      std::random_device rd;
+      std::mt19937 gen(rd());
+      std::bernoulli_distribution d(0.5);
+      bool resultado = d(gen);
+
     while (rclcpp::ok() and not front and not left and not right) {
         message.linear.x = 0.3;
         message.angular.z = 0;
@@ -60,7 +66,8 @@ int main(int argc, char * argv[])
     }
     while (rclcpp::ok() and front) {
         message.linear.x = 0;
-        message.angular.z = 0.2;
+        message.angular.z = 0.2 * resultado;
+
         printf("Publicando... (FRONT) \n");                        
         publisher -> publish(message);
         rclcpp::spin_some(node);

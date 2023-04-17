@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/b
 
 # The main recursive "all" target.
 all: CMakeFiles/detector.dir/all
+all: CMakeFiles/avoidance.dir/all
 
 .PHONY : all
 
@@ -64,6 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/detector.dir/clean
+clean: CMakeFiles/avoidance.dir/clean
 clean: CMakeFiles/obstacles_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
@@ -76,7 +78,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/detector.dir/all:
 	$(MAKE) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/depend
 	$(MAKE) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles --progress-num=1,2 "Built target detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles --progress-num=3,4 "Built target detector"
 .PHONY : CMakeFiles/detector.dir/all
 
 # Build rule for subdir invocation for target.
@@ -95,6 +97,33 @@ detector: CMakeFiles/detector.dir/rule
 CMakeFiles/detector.dir/clean:
 	$(MAKE) -f CMakeFiles/detector.dir/build.make CMakeFiles/detector.dir/clean
 .PHONY : CMakeFiles/detector.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/avoidance.dir
+
+# All Build rule for target.
+CMakeFiles/avoidance.dir/all:
+	$(MAKE) -f CMakeFiles/avoidance.dir/build.make CMakeFiles/avoidance.dir/depend
+	$(MAKE) -f CMakeFiles/avoidance.dir/build.make CMakeFiles/avoidance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles --progress-num=1,2 "Built target avoidance"
+.PHONY : CMakeFiles/avoidance.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/avoidance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/avoidance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles 0
+.PHONY : CMakeFiles/avoidance.dir/rule
+
+# Convenience name for target.
+avoidance: CMakeFiles/avoidance.dir/rule
+
+.PHONY : avoidance
+
+# clean rule for target.
+CMakeFiles/avoidance.dir/clean:
+	$(MAKE) -f CMakeFiles/avoidance.dir/build.make CMakeFiles/avoidance.dir/clean
+.PHONY : CMakeFiles/avoidance.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/obstacles_uninstall.dir
