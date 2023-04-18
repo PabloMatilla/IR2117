@@ -41,7 +41,7 @@ int main(int argc, char * argv[])
       bool resultado = d(gen);
 
     while (rclcpp::ok() and not front and not left and not right) {
-        message.linear.x = 0.3;
+        message.linear.x = 0.1;
         message.angular.z = 0;
         printf("Publicando... (FORWARD) \n");
         publisher -> publish(message);
@@ -50,7 +50,7 @@ int main(int argc, char * argv[])
     }
     while (rclcpp::ok() and left) {
         message.linear.x = 0;
-        message.angular.z = -0.2;
+        message.angular.z = -0.1;
         printf("Publicando... (LEFT) \n");        
         publisher -> publish(message);
         rclcpp::spin_some(node);
@@ -58,7 +58,7 @@ int main(int argc, char * argv[])
     }
     while (rclcpp::ok() and right) {
         message.linear.x = 0;
-        message.angular.z = 0.2;
+        message.angular.z = 0.1;
         printf("Publicando... (RIGHT) \n");                
         publisher -> publish(message);
         rclcpp::spin_some(node);
@@ -66,7 +66,7 @@ int main(int argc, char * argv[])
     }
     while (rclcpp::ok() and front) {
         message.linear.x = 0;
-        message.angular.z = 0.2 * resultado;
+        message.angular.z = 0.1 * resultado;
 
         printf("Publicando... (FRONT) \n");                        
         publisher -> publish(message);
