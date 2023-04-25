@@ -31,3 +31,7 @@
 *.out
 *.app
 hello
+
+build/
+install/
+log/
