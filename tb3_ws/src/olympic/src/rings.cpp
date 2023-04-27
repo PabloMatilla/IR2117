@@ -2,8 +2,10 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include "turtlesim/srv/set_pen.hpp"
 
 using namespace std::chrono_literals;
+using turtlesim::srv::set_pen;
 
 int main(int argc, char * argv[])
 {
@@ -23,6 +25,20 @@ int main(int argc, char * argv[])
  // Iteraciones
  int iteraciones = perimetro/vel_linear/0.5;
  int count = 0;
+ 
+ auto request_setpen =
+    std::make_shared<set_pen::Request>();
+  request_setpen 
+
+  while (!client->wait_for_service(1s)) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
+       "Interrupted while waiting for the service.");
+      return 0;
+	 }
+	 RCLCPP_INFO(rclcpp::get_logger("rclcpp"),
+     "service not available, waiting again...");
+  }
  
  while (rclcpp::ok() and count < iteraciones) {
    message.linear.x = vel_linear;
