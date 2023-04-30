@@ -668,6 +668,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/detector.dir/DependInfo.cmake"
+  "CMakeFiles/avoidance.dir/DependInfo.cmake"
   "CMakeFiles/obstacles_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   )

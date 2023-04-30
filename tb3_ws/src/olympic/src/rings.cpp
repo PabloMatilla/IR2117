@@ -5,7 +5,7 @@
 #include "turtlesim/srv/set_pen.hpp"
 
 using namespace std::chrono_literals;
-using turtlesim::srv::set_pen;
+using turtlesim::srv::SetPen;
 
 int main(int argc, char * argv[])
 {
@@ -26,9 +26,15 @@ int main(int argc, char * argv[])
  int iteraciones = perimetro/vel_linear/0.5;
  int count = 0;
  
- auto request_setpen =
-    std::make_shared<set_pen::Request>();
-  request_setpen 
+
+ // call the set_pen service to set the pen color and width
+ rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("turtlesim/SetPen");
+ auto request = std::make_shared<SetPen::Request>();
+ request->r = 255;
+ request->g = 0;
+ request->b = 0;
+ request->width = 2;
+ request->off = false;
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -39,7 +45,18 @@ int main(int argc, char * argv[])
 	 RCLCPP_INFO(rclcpp::get_logger("rclcpp"),
      "service not available, waiting again...");
   }
- 
+
+  auto result = client->async_send_request(request);
+
+  if (rclcpp::spin_until_future_complete(node,
+       result) ==	rclcpp::FutureReturnCode::SUCCESS)
+  {
+  
+  } else {
+    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
+     "Failed to call service set_pen");
+  }
+
  while (rclcpp::ok() and count < iteraciones) {
    message.linear.x = vel_linear;
    message.angular.z = vel_linear/radius;
