@@ -27,48 +27,43 @@ int main(int argc, char * argv[])
  int count = 0;
  
 
- // call the set_pen service to set the pen color and width
- rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("turtlesim/SetPen");
- auto request = std::make_shared<SetPen::Request>();
- request->r = 255;
- request->g = 0;
- request->b = 0;
- request->width = 2;
- request->off = false;
+ //auto node = rclcpp::Node::make_shared("set_pen_client");
+ auto client = node->create_client<SetPen>("/turtle1/set_pen"); 
 
-  while (!client->wait_for_service(1s)) {
+  // Wait for the service to be available
+  while (!client->wait_for_service(std::chrono::seconds(1))) {
     if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
-       "Interrupted while waiting for the service.");
-      return 0;
-	 }
-	 RCLCPP_INFO(rclcpp::get_logger("rclcpp"),
-     "service not available, waiting again...");
+      RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
+      return 1;
+    }
+    RCLCPP_INFO(node->get_logger(), "Service not available, waiting again...");
   }
 
-  auto result = client->async_send_request(request);
+   // Create a request message for the set_pen service
+   auto request = std::make_shared<SetPen::Request>();
+   request->r = 255;
+   request->g = 0;
+   request->b = 0;
+   request->width = 3;
+   request->off = false;
 
-  if (rclcpp::spin_until_future_complete(node,
-       result) ==	rclcpp::FutureReturnCode::SUCCESS)
-  {
-  
-  } else {
-    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"),
-     "Failed to call service set_pen");
+   // Call the set_pen service
+   auto result_future = client->async_send_request(request);
+   rclcpp::spin_until_future_complete(node, result_future);
+   auto result = result_future.get();
+
+   while (rclcpp::ok() and count < iteraciones) {
+    message.linear.x = vel_linear;
+    message.angular.z = vel_linear/radius;
+    publisher->publish(message);
+    rclcpp::spin_some(node);
+    loop_rate.sleep();
+    count++;
   }
-
- while (rclcpp::ok() and count < iteraciones) {
-   message.linear.x = vel_linear;
-   message.angular.z = vel_linear/radius;
-   publisher->publish(message);
-   rclcpp::spin_some(node);
-   loop_rate.sleep();
-   count++;
- }
- message.linear.x = 0;
- message.angular.z = 0;
- rclcpp::shutdown();
- return 0;
+  message.linear.x = 0;
+  message.angular.z = 0;
+  rclcpp::shutdown();
+  return 0;
 }
 
 // ros2 run olympic rings --ros-args --param radius:=0.5
