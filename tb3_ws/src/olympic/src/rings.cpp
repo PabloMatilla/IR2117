@@ -3,9 +3,13 @@
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "turtlesim/srv/set_pen.hpp"
+#include "turtlesim/srv/teleport_absolute.hpp"
+#include "turtlesim/srv/teleport_relative.hpp"
 
 using namespace std::chrono_literals;
 using turtlesim::srv::SetPen;
+using turtlesim::srv::TeleportAbsolute;
+using turtlesim::srv::TeleportRelative;
 
 int main(int argc, char * argv[])
 {
@@ -26,12 +30,60 @@ int main(int argc, char * argv[])
  int iteraciones = perimetro/vel_linear/0.5;
  int count = 0;
  
-
- //auto node = rclcpp::Node::make_shared("set_pen_client");
- auto client = node->create_client<SetPen>("/turtle1/set_pen"); 
+ // Service teleport abs
+ auto client_teleport_abs = node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute"); 
 
   // Wait for the service to be available
-  while (!client->wait_for_service(std::chrono::seconds(1))) {
+  while (!client_teleport_abs->wait_for_service(std::chrono::seconds(1))) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
+      return 1;
+    }
+    RCLCPP_INFO(node->get_logger(), "Service not available, waiting again...");
+  }
+
+   // Create a request message for the Teleport service
+   auto request_teleport_abs = std::make_shared<TeleportAbsolute::Request>();
+   request_teleport_abs->x = 5.5;
+   request_teleport_abs->y = 5.5;
+   request_teleport_abs->theta = 0;
+
+   // Call the set_pen service
+   auto result_future_teleport_abs = client_teleport_abs->async_send_request(request_teleport_abs);
+   rclcpp::spin_until_future_complete(node, result_future_teleport_abs);
+   auto result_teleport_abs = result_future_teleport_abs.get();
+
+
+
+ // Service teleport relative
+ auto client_teleport = node->create_client<TeleportRelative>("/turtle1/teleport_relative"); 
+
+  // Wait for the service to be available
+  while (!client_teleport->wait_for_service(std::chrono::seconds(1))) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
+      return 1;
+    }
+    RCLCPP_INFO(node->get_logger(), "Service not available, waiting again...");
+  }
+
+   // Create a request message for the Teleport service
+   auto request_teleport = std::make_shared<TeleportRelative::Request>();
+   request_teleport->linear = -1;
+   request_teleport->angular = 0;
+
+   // Call the set_pen service
+   auto result_future_teleport = client_teleport->async_send_request(request_teleport);
+   rclcpp::spin_until_future_complete(node, result_future_teleport);
+   auto result_teleport = result_future_teleport.get();
+
+
+
+ // Service SetPen
+ auto client_setpen = node->create_client<SetPen>("/turtle1/set_pen"); 
+
+  // Wait for the service to be available
+  while (!client_setpen->wait_for_service(std::chrono::seconds(1))) {
     if (!rclcpp::ok()) {
       RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
       return 1;
@@ -48,9 +100,9 @@ int main(int argc, char * argv[])
    request->off = false;
 
    // Call the set_pen service
-   auto result_future = client->async_send_request(request);
+   auto result_future = client_setpen->async_send_request(request);
    rclcpp::spin_until_future_complete(node, result_future);
-   auto result = result_future.get();
+   auto result_setpen = result_future.get();
 
    while (rclcpp::ok() and count < iteraciones) {
     message.linear.x = vel_linear;
