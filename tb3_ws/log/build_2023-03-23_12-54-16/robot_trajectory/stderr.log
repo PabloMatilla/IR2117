@@ -1,8 +1,0 @@
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:23:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KString[m[K’?
-   23 |   std_msgs::msg::[01;31m[Kstring[m[K s;
-      |                  [01;31m[K^~~~~~[m[K
-      |                  [32m[KString[m[K
-make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

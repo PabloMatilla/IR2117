@@ -1,7 +1,0 @@
-[0.048s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6
-[0.185s] [ 50%] [32m[1mLinking CXX executable square_odom[0m
-[0.981s] make[2]: *** Se borra el archivo 'square_odom'
-[0.982s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:172: square_odom] Interrupción
-[0.982s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Interrupción
-[0.982s] make: *** [Makefile:141: all] Interrupción
-[0.984s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/build/robot_trajectory -- -j6 -l6

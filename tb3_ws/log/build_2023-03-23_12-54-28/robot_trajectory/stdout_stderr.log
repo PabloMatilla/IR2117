@@ -1,7 +1,0 @@
-[35m[1mScanning dependencies of target wandering[0m
-[ 50%] Built target square_odom
-[ 75%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
-make[2]: *** Se borra el archivo 'CMakeFiles/wandering.dir/src/wandering.cpp.o'
-make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Interrupción
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/wandering.dir/all] Interrupción
-make: *** [Makefile:141: all] Interrupción

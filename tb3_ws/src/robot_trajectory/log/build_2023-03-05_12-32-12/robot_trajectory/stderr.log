@@ -1,7 +1,0 @@
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktf/transform_datatypes.hpp: No such file or directory
-    6 | #include [01;31m[K"tf/transform_datatypes.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square_odom.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

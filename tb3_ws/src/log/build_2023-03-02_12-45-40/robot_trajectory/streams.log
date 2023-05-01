@@ -1,6 +1,0 @@
-[0.016s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j6 -l6
-[0.023s] CMake Error: The current CMakeCache.txt directory /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeCache.txt is different than the directory /home/pablo/Documentos/IR2117/tb3_ws/src/build/robot_trajectory where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-[0.033s] CMake Error: The source directory "/home/pablo/Documentos/IR2117/tb3_ws/src/robot_trajectory" does not exist.
-[0.033s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.033s] make: *** [Makefile:266: cmake_check_build_system] Error 1
-[0.035s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory' returned '2': /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j6 -l6

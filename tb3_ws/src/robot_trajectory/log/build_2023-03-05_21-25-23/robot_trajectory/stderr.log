@@ -1,3 +1,0 @@
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:77:63:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
-   77 |       std::cout << "Diferencia pos: " << dif_ang << std::endl;/*
-      |                                                                
