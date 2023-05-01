@@ -1,1 +1,0 @@
-Invoking command in '/home/usuario/Documentos/GitHub/IR2117/build/eigen_sta': /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/eigen_sta -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/install/eigen_sta

@@ -1,2 +1,0 @@
-Invoking command in '/home/usuario/Documentos/GitHub/IR2117/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/build/examples_sum -- -j4 -l4
-Invoked command in '/home/usuario/Documentos/GitHub/IR2117/build/examples_sum' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/build/examples_sum -- -j4 -l4

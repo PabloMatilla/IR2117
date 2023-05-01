@@ -1,6 +1,0 @@
-Invoking command in '/home/pablo/Documentos/IR2117/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/sum -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_sum
-Invoked command in '/home/pablo/Documentos/IR2117/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pablo/Documentos/IR2117/ros2_ws/src/examples/sum -DCMAKE_INSTALL_PREFIX=/home/pablo/Documentos/IR2117/install/examples_sum
-Invoking command in '/home/pablo/Documentos/IR2117/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_sum -- -j4 -l4
-Invoked command in '/home/pablo/Documentos/IR2117/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pablo/Documentos/IR2117/build/examples_sum -- -j4 -l4
-Invoking command in '/home/pablo/Documentos/IR2117/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_sum
-Invoked command in '/home/pablo/Documentos/IR2117/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pablo/Documentos/IR2117/build/examples_sum
