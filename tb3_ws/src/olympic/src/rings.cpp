@@ -5,7 +5,6 @@
 #include "turtlesim/srv/set_pen.hpp"
 #include "turtlesim/srv/teleport_absolute.hpp"
 #include "turtlesim/srv/teleport_relative.hpp"
-#include "turtlesim/srv/set_background.hpp"
 
 using namespace std::chrono_literals;
 using turtlesim::srv::SetPen;
