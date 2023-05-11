@@ -1,11 +1,11 @@
 #include <inttypes.h>
 #include <memory>
-#include "action_tutorials_interfaces/action/rings.hpp"
+#include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 
 using Rings = 
-  action_tutorials_interfaces::action::Rings;
+  olympic_interfaces::action::Rings;
 
 using GoalHandleRings =
   rclcpp_action::ClientGoalHandle<Rings>;
@@ -20,7 +20,7 @@ void feedback_callback(GoalHandleRings::SharedPtr,
   RCLCPP_INFO(
     g_node->get_logger(),
     "Next number in sequence received: %" PRId32,
-    feedback->partial_sequence.back());
+    feedback->drawing_ring);
 }
 
 int main(int argc, char ** argv)
@@ -36,7 +36,9 @@ int main(int argc, char ** argv)
     return 1;
   }
   auto goal_msg = Rings::Goal();
-  goal_msg.order = 10;
+  g_node->declare_parameter("radius", 1.0);
+  double radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
+  goal_msg.radius = radius;
 
 
   RCLCPP_INFO(g_node->get_logger(), 
@@ -98,9 +100,7 @@ int main(int argc, char ** argv)
   }
 
   RCLCPP_INFO(g_node->get_logger(), "result received");
-  for (auto number : wrapped_result.result->sequence) {
-    RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
-  }
+  //RCLCPP_INFO(g_node->get_logger(), "%" PRId32, rings_completed);
 
   action_client.reset();
   g_node.reset();

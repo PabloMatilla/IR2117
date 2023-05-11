@@ -1,11 +1,11 @@
 #include <inttypes.h>
 #include <memory>
-#include "action_tutorials_interfaces/action/rings.hpp"
+#include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 
 using Rings = 
-  action_tutorials_interfaces::action::Rings;
+  olympic_interfaces::action::Rings;
 
 using GoalHandleRings = 
   rclcpp_action::ServerGoalHandle<Rings>;
@@ -15,7 +15,7 @@ using GoalHandleRings =
   std::shared_ptr<const Rings::Goal> goal)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Got goal request with order %d", goal->order);
+    "Got goal request with radius %d", goal->radius);
   (void)uuid;
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
@@ -45,10 +45,10 @@ void execute(
   rclcpp::Rate loop_rate(1);
   const auto goal = goal_handle->get_goal();
   auto feedback = std::make_shared<Rings::Feedback>();
-  auto & sequence = feedback->partial_sequence;
-  sequence.push_back(0);
-  sequence.push_back(1);
+  auto & drawing_ring = feedback->drawing_ring;
+
   auto result = std::make_shared<Rings::Result>();
+  /*
   for (int i = 1; (i < goal->order) && rclcpp::ok(); ++i) {
     if (goal_handle->is_canceling()) {
       result->sequence = sequence;
@@ -63,9 +63,10 @@ void execute(
       "Publish Feedback");
     loop_rate.sleep();
   }
+  */
 
   if (rclcpp::ok()) {
-    result->sequence = sequence;
+    //result->drawing_ring = drawing_ring;
     goal_handle->succeed(result);
     RCLCPP_INFO(rclcpp::get_logger("server"), 
       "Goal Succeeded");
