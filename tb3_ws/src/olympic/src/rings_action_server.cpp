@@ -1,18 +1,18 @@
 #include <inttypes.h>
 #include <memory>
-#include "action_tutorials_interfaces/action/fibonacci.hpp"
+#include "action_tutorials_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 
-using Fibonacci = 
-  action_tutorials_interfaces::action::Fibonacci;
+using Rings = 
+  action_tutorials_interfaces::action::Rings;
 
-using GoalHandleFibonacci = 
-  rclcpp_action::ServerGoalHandle<Fibonacci>;
+using GoalHandleRings = 
+  rclcpp_action::ServerGoalHandle<Rings>;
 
   rclcpp_action::GoalResponse handle_goal(
   const rclcpp_action::GoalUUID & uuid, 
-  std::shared_ptr<const Fibonacci::Goal> goal)
+  std::shared_ptr<const Rings::Goal> goal)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
     "Got goal request with order %d", goal->order);
@@ -21,7 +21,7 @@ using GoalHandleFibonacci =
 }
 
 rclcpp_action::CancelResponse handle_cancel(
-  const std::shared_ptr<GoalHandleFibonacci> goal_handle)
+  const std::shared_ptr<GoalHandleRings> goal_handle)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
     "Got request to cancel goal");
@@ -29,26 +29,26 @@ rclcpp_action::CancelResponse handle_cancel(
   return rclcpp_action::CancelResponse::ACCEPT;
 }
 
-void execute(const std::shared_ptr<GoalHandleFibonacci>);
+void execute(const std::shared_ptr<GoalHandleRings>);
 
 void handle_accepted(
-  const std::shared_ptr<GoalHandleFibonacci> goal_handle)
+  const std::shared_ptr<GoalHandleRings> goal_handle)
 {
   std::thread{execute, goal_handle}.detach();
 }
 
 void execute(
-  const std::shared_ptr<GoalHandleFibonacci> goal_handle)
+  const std::shared_ptr<GoalHandleRings> goal_handle)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
     "Executing goal");
   rclcpp::Rate loop_rate(1);
   const auto goal = goal_handle->get_goal();
-  auto feedback = std::make_shared<Fibonacci::Feedback>();
+  auto feedback = std::make_shared<Rings::Feedback>();
   auto & sequence = feedback->partial_sequence;
   sequence.push_back(0);
   sequence.push_back(1);
-  auto result = std::make_shared<Fibonacci::Result>();
+  auto result = std::make_shared<Rings::Result>();
   for (int i = 1; (i < goal->order) && rclcpp::ok(); ++i) {
     if (goal_handle->is_canceling()) {
       result->sequence = sequence;
@@ -77,8 +77,8 @@ int main(int argc, char ** argv)
   rclcpp::init(argc, argv);
   auto node = rclcpp::Node::make_shared("action_server");
   auto action_server = 
-    rclcpp_action::create_server<Fibonacci>(node,
-      "fibonacci",
+    rclcpp_action::create_server<Rings>(node,
+      "rings",
       handle_goal,
       handle_cancel,
       handle_accepted);
