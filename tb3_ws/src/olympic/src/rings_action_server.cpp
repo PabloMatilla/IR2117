@@ -3,6 +3,11 @@
 #include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "std_msgs/msg/string.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "turtlesim/srv/set_pen.hpp"
+#include "turtlesim/srv/teleport_absolute.hpp"
+#include "turtlesim/srv/teleport_relative.hpp"
 
 using Rings = 
   olympic_interfaces::action::Rings;
@@ -15,10 +20,15 @@ using GoalHandleRings =
   std::shared_ptr<const Rings::Goal> goal)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Got goal request with radius %d", goal->radius);
+    "Got goal request with radius %f", goal->radius);
   (void)uuid;
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
+
+using namespace std::chrono_literals;
+using turtlesim::srv::SetPen;
+using turtlesim::srv::TeleportAbsolute;
+using turtlesim::srv::TeleportRelative;
 
 rclcpp_action::CancelResponse handle_cancel(
   const std::shared_ptr<GoalHandleRings> goal_handle)

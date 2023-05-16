@@ -37,7 +37,7 @@ int main(int argc, char ** argv)
   }
   auto goal_msg = Rings::Goal();
   g_node->declare_parameter("radius", 1.0);
-  goal_msg.radius = 1; //g_node->get_parameter("radius").get_parameter_value().get<double>();
+  goal_msg.radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
 
   RCLCPP_INFO(g_node->get_logger(), 
     "Sending goal");
