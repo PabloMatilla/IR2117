@@ -19,8 +19,12 @@ void feedback_callback(GoalHandleRings::SharedPtr,
 {
   RCLCPP_INFO(
     g_node->get_logger(),
-    "Next number in sequence received: %" PRId32,
-    feedback->drawing_ring);
+    "Number ring: %" PRId32,
+    feedback ->drawing_ring);
+  RCLCPP_INFO(
+    g_node->get_logger(),
+    "Angle ring: %f",
+    feedback ->ring_angle);
 }
 
 int main(int argc, char ** argv)
@@ -97,8 +101,8 @@ int main(int argc, char ** argv)
       return 1;
   }
 
-  RCLCPP_INFO(g_node->get_logger(), "result received");
-  //RCLCPP_INFO(g_node->get_logger(), "%" PRId32, rings_completed);
+  RCLCPP_INFO(g_node->get_logger(), "result received ;)");
+ 
 
   action_client.reset();
   g_node.reset();
