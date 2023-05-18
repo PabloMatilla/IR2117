@@ -98,19 +98,19 @@ void execute(
       return;
     }
     // Change colors and disable pen
-		request_set_pen->r = r[i];
-		request_set_pen->g = g[i];
-		request_set_pen->b = b[i];
-		request_set_pen->width = 5 * radius;
-		request_set_pen->off = 1;
+    request_set_pen->r = r[i];
+    request_set_pen->g = g[i];
+    request_set_pen->b = b[i];
+    request_set_pen->width = 5 * radius;
+    request_set_pen->off = 1;
     
     auto result_set_pen = client_set_pen->async_send_request(request_set_pen);
     
     // Circle absolute position
-		request_teleport_absolute = std::make_shared<TeleportAbsolute::Request>();
-		request_teleport_absolute->x = 5.5 + x[i] * radius;
-		request_teleport_absolute->y = 5.5 + y[i] * radius;
-		request_teleport_absolute->theta = 0;
+   request_teleport_absolute = std::make_shared<TeleportAbsolute::Request>();
+   request_teleport_absolute->x = 5.5 + x[i] * radius;
+   request_teleport_absolute->y = 5.5 + y[i] * radius;
+   request_teleport_absolute->theta = 0;
 
     auto result_teleport_absolute = client_teleport_absolute->async_send_request(request_teleport_absolute);
 
@@ -123,28 +123,26 @@ void execute(
        "Publish Feedback");
     
     // Turn pen back on
-		request_set_pen->off = 0;
-		result_set_pen = client_set_pen->async_send_request(request_set_pen);
+    request_set_pen->off = 0;
+    result_set_pen = client_set_pen->async_send_request(request_set_pen);
 		
     // Draw the circle
-		numero = 0;
-		while (rclcpp::ok() && (numero <= iterations)) {
-			message.linear.x = v_linear;
-			message.angular.z = v_angular;
-			publisher->publish(message);
-			numero++;
+    numero = 0;
+    while (rclcpp::ok() && (numero <= iterations)) {
+	message.linear.x = v_linear;
+	message.angular.z = v_angular;
+	publisher->publish(message);
+	numero++;
 
       ring_angle =  numero * 360/iterations; 
       goal_handle->publish_feedback(feedback);
       RCLCPP_INFO(rclcpp::get_logger("server"), 
         "Publish Feedback");
-			
-			loop_rate.sleep();
-		}
-		message.linear.x = 0.0;
-		message.angular.z = 0.0;
-		publisher->publish(message);
-		loop_rate.sleep();
+      loop_rate.sleep();}
+      message.linear.x = 0.0;
+      message.angular.z = 0.0;
+      publisher->publish(message);
+      loop_rate.sleep();
   }
 
   if (rclcpp::ok()) {
