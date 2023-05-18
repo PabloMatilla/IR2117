@@ -72,22 +72,22 @@ void execute(
   
   rclcpp::WallRate loop_rate(100ms);
   
-	std::vector<int> r = {0, 0, 255, 255, 0};
+  std::vector<int> r = {0, 0, 255, 255, 0};
   std::vector<int> g = {0, 0, 0, 255, 128};
   std::vector<int> b = {0, 255, 0, 0, 0};
 	
-	std::vector<double> x = {-2.2, 0, 2.2, -1.2, 1.2};
-	std::vector<double> y = {0, 0, 0, -1, -1};
+  std::vector<double> x = {-2.2, 0, 2.2, -1.2, 1.2};
+  std::vector<double> y = {0, 0, 0, -1, -1};
 	
-	// SetPen service
-	rclcpp::Client<SetPen>::SharedPtr client_set_pen =
-	  node->create_client<SetPen>("/turtle1/set_pen");
-	auto request_set_pen = std::make_shared<SetPen::Request>();
-	
-	// TeleportAbsolute service
-	rclcpp::Client<TeleportAbsolute>::SharedPtr client_teleport_absolute =
-		node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute");
-	auto request_teleport_absolute = std::make_shared<TeleportAbsolute::Request>();
+  // SetPen service
+  rclcpp::Client<SetPen>::SharedPtr client_set_pen =
+      node->create_client<SetPen>("/turtle1/set_pen");
+  auto request_set_pen = std::make_shared<SetPen::Request>();
+
+  // TeleportAbsolute service
+  rclcpp::Client<TeleportAbsolute>::SharedPtr client_teleport_absolute =
+	node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute");
+  auto request_teleport_absolute = std::make_shared<TeleportAbsolute::Request>();
   
   // Begin the loop
   for (int i = 0; i < 5; i++) {
